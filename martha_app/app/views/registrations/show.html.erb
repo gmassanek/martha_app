@@ -1,2 +1,11 @@
-<h1>Registrations#show</h1>
-<p>Find me in app/views/registrations/show.html.erb</p>
+<div class="header">
+  <h3>Registration Form - <%= @registration.name %></h3>
+</div>
+
+<div class="content">
+  <h6> Name</h6>
+  <%= @registration.name %>
+
+  <h6> Email</h6>
+  <%= @registration.email %>
+</div>
