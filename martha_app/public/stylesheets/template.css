@@ -9,7 +9,7 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size:13px;
 	line-height:1.5em; 
-	background-color: #baa443;
+	background-color: #888888;
 	background-image: url(../images/templatemo_body.jpg);
 	background-position: top;
 	background-repeat: repeat-x;
@@ -56,8 +56,8 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 .image_wrapper {
 	display: inline-block;
 	padding: 7px;
-	border: 1px solid #8c781f;
-	background: #a59035;
+	border: 1px solid #bc3d3d;
+	background: #5f4f4f;
 }
 
 .non_float_img { margin-bottom: 10px; }
