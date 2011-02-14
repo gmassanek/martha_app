@@ -23,7 +23,7 @@ class RegistrationsController < ApplicationController
     else
       @title = "Sign up"
 
-      #render :action=>'new'
+      render :action=>'new'
       #redirect_to register_path
       #redirect_to :action => 'new', :email =>@registration.email
     end

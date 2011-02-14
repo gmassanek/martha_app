@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @title = "Geoff"
+    @title = "Home"
   end
 
   def event
