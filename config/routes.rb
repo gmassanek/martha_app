@@ -1,9 +1,9 @@
 MarthaApp::Application.routes.draw do
   resources :registrations
+  match '/register', :to => 'registrations#new'
   match '/home', :to => 'pages#home'
   match '/event', :to => 'pages#event'
   match '/info', :to => 'pages#info'
-  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

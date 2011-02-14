@@ -355,7 +355,7 @@ ul li {
 
 .sidebar_box {
 	width: 280px;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	color: #FFFFFF;
 }
 
@@ -431,6 +431,29 @@ ul li {
 	background: url(../images/templatemo_button.png) no-repeat;
 }
 
+.floatr_btn {
+
+        margin-right: 40px;
+        background: #a69135;
+        float: right;
+        cursor: pointer;
+        width: 100px;
+        height: 28px;
+        padding: 0 15px 4px 0;
+        font-size: 11px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        vertical-align: bottom;
+        white-space: pre;
+        border: none;
+        background: url(../images/templatemo_button.png) no-repeat;
+}
+
+.floatr_btn:hover {
+        color: #fff;
+        background: url(../images/templatemo_button_hover.png) no-repeat;
+}
 #newsletter_submit:hover {
 	color: #fff;
 	background: url(../images/templatemo_button_hover.png) no-repeat;
@@ -453,4 +476,7 @@ ul li {
 	color: #ffadad;
 }
 
+.field_with_errors {
+  bg-color: red;
+}
 /* end of footer */
