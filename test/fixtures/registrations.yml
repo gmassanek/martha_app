@@ -1,13 +1,21 @@
 # == Schema Information
-# Schema version: 20110213034324
+# Schema version: 20110215011311
 #
 # Table name: registrations
 #
-#  id         :integer         not null, primary key
-#  name       :string(255)
-#  email      :string(255)
-#  created_at :datetime
-#  updated_at :datetime
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  email       :string(255)
+#  created_at  :datetime
+#  updated_at  :datetime
+#  home_phone  :string(255)
+#  cell_phone  :string(255)
+#  address_1   :string(255)
+#  address_2   :string(255)
+#  city        :string(255)
+#  state       :string(255)
+#  zip         :string(255)
+#  credentials :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

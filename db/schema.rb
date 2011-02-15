@@ -10,13 +10,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110213034324) do
+ActiveRecord::Schema.define(:version => 20110215011311) do
 
   create_table "registrations", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "home_phone"
+    t.string   "cell_phone"
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "credentials"
   end
 
 end

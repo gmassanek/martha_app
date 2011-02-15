@@ -23,7 +23,16 @@ a:hover {
 	color: #FFFF66;
 	text-decoration:none;
 }
-
+hr {
+        color: #663300;
+        font-family: Tahoma, Geneva, sans-serif;
+        font-size:13px;
+        line-height:1.5em;
+        background-color: #888888;
+        background-image: url(../images/templatemo_body.jpg);
+        background-position: top;
+        background-repeat: repeat-x;
+}
 p { margin: 0px; padding: 0 0 10px 0; }
 img { border: none; }
 
@@ -303,48 +312,63 @@ ul li {
 	}
 /* end of gallery */
 
-#contact_form {
+/* registration form */
+
+#registration_form {
 	float: left;
 	padding: 0;
 }
 
-#contact_form form {
+#registration_form form {
 	margin: 0px;
 	padding: 0px;
 	/*border:1px solid #e2d1be;
 	padding: 20px 20px 10px 20px; */
 }
 
-#contact_form form .input_field {
+#registration_form form select {
+        width: 450px;
+        padding: 10px 0;
+        background: #663300;
+        color: #a69135;
+        border: 1px solid #917e28;
+}
+
+#registration_form form .input_field {
 	width: 450px;
 	padding: 10px 0;
-	background: #a69135;
+	background: #663300;
+        color: #a69135;
 	border: 1px solid #917e28;
 }
 
-#contact_form form label {
+#registration_form form label {
 	display: block;
-	width: 100px;
+	width: 450px;
 	margin-right: 10px;
 	font-size: 14px;	
 }
 
-#contact_form form textarea {
+#registration_form form textarea {
 	width: 450px;
 	height: 200px;
 	background: #a69135;
 	border: 1px solid #917e28;
 }
 
-#contact_form form .submit_btn {
+#registration_form form .submit_btn {
 	margin-right: 40px;
 	background: #a69135;
 	padding: 5px 10px;
 	border: 1px solid #917e28;
 }
 
+#registration_form div .field_with_errors input {
+        background: #FFFF66;
+        color: #a69135;
+}
 
-/* end of content */
+/* end of registration form */
 
 /* sidebar */
 
@@ -430,7 +454,32 @@ ul li {
 	border: none;
 	background: url(../images/templatemo_button.png) no-repeat;
 }
+#newsletter_submit:hover {
+	color: #fff;
+	background: url(../images/templatemo_button_hover.png) no-repeat;
+}
 
+/* end of sidebar */
+
+#templatemo_footer {
+	width: 920px;
+	height: 42px;
+	padding: 20px 30px 0;
+	color: #ffadad;
+	text-align: center;
+	background: url(../images/templatemo_footer.png) no-repeat;
+}
+
+#templatemo_footer a {
+	color: #ffadad;
+}
+
+/* end of footer */
+
+/* Start Custom */
+.field_with_errors {
+  bg-color: red;
+}
 .floatr_btn {
 
         margin-right: 40px;
@@ -454,29 +503,3 @@ ul li {
         color: #fff;
         background: url(../images/templatemo_button_hover.png) no-repeat;
 }
-#newsletter_submit:hover {
-	color: #fff;
-	background: url(../images/templatemo_button_hover.png) no-repeat;
-}
-
-/* end of sidebar */
-
-/* end of sidebar */
-
-#templatemo_footer {
-	width: 920px;
-	height: 42px;
-	padding: 20px 30px 0;
-	color: #ffadad;
-	text-align: center;
-	background: url(../images/templatemo_footer.png) no-repeat;
-}
-
-#templatemo_footer a {
-	color: #ffadad;
-}
-
-.field_with_errors {
-  bg-color: red;
-}
-/* end of footer */

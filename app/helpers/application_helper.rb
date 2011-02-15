@@ -1,4 +1,6 @@
 module ApplicationHelper
+
+  
   def title
     base_title = "Acute Care Leadership Summit"
     if @title.nil?
