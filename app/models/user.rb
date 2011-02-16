@@ -17,12 +17,12 @@ class User < ActiveRecord::Base
   
   validates :password,  :presence => true,
                         :confirmation => true,
-                        :length => {:within => 6..10}
-                        :if => :password_required
+                        :length => {:within => 6..10},
+                        :if => :password_required?
 
   validates :password_confirmation,
             :presence => true,
-            :if => :password_required
+            :if => :password_required?
 
   attr_accessor :password
   attr_accessible :name, :password, :password_confirmation
@@ -34,7 +34,7 @@ class User < ActiveRecord::Base
   end
 
   private
-  def password_required
+  def password_required?
     !persisted? || !password.nil? || !password_confirmation.nil?
   end
   def save_encrypt_password
