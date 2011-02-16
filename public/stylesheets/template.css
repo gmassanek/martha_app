@@ -326,14 +326,6 @@ ul li {
 	padding: 20px 20px 10px 20px; */
 }
 
-#registration_form form select {
-        width: 450px;
-        padding: 10px 0;
-        background: #663300;
-        color: #a69135;
-        border: 1px solid #917e28;
-}
-
 #registration_form form .input_field {
 	width: 450px;
 	padding: 10px 0;

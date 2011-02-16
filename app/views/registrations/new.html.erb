@@ -35,7 +35,7 @@ not be saved until payment has been received.</p>
     </div>
     <div class="field">
       <%= f.label :state %>
-      <%= f.select :state, states_array, :include_blank => true, :class=>"required input_field" %>
+      <%= f.select :state, states_array, {:include_blank => true}, :class=>"required input_field" %>
     </div>
     <div class="field">
       <%= f.label :zip %>

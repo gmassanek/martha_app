@@ -1,0 +1,21 @@
+# == Schema Information
+# Schema version: 20110215173604
+#
+# Table name: user_roles
+#
+#  id         :integer         not null, primary key
+#  user_id    :integer
+#  role_id    :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+
+two:
+  name: MyString
+  description: MyText
