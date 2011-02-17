@@ -5,7 +5,7 @@ Credit: http://www.templatemo.com
 body {
 	margin:0px;
 	padding:0px;
-	color: #663300;
+	color: #000000;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size:13px;
 	line-height:1.5em; 
@@ -38,11 +38,11 @@ img { border: none; }
 
 h1, h2, h3, h4, h5 { font-weight: normal; }
 
-h1 { font-size: 40px; color: #663300; margin: 0 0 30px 0; padding: 5px 0; }
-h2 { font-size: 32px; color: #663300; margin: 0 0 20px 0; padding: 0; }
-h3 { font-size: 21px; color: #663300; margin: 0 0 20px 0; padding: 0; }
-h4 { font-size: 18px; color: #663300; margin: 0 0 10px 0; padding: 0; }
-h5 { font-size: 16px; color: #663300; margin: 0 0 10px 0; padding: 0; }
+h1 { font-size: 40px; color: #000000; margin: 0 0 30px 0; padding: 5px 0; }
+h2 { font-size: 32px; color: #000000; margin: 0 0 20px 0; padding: 0; }
+h3 { font-size: 21px; color: #000000; margin: 0 0 20px 0; padding: 0; }
+h4 { font-size: 18px; color: #000000; margin: 0 0 10px 0; padding: 0; }
+h5 { font-size: 16px; color: #000000; margin: 0 0 10px 0; padding: 0; }
 h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 
 .cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
@@ -91,7 +91,7 @@ cite span { color: #fff; }
 	height: 24px;
 	padding: 3px 15px 0 0;
 	background: url(../images/templatemo_button.png)  no-repeat;
-	color: #333;
+	color: #000000;
 	font-weight: bold;
 	font-size: 11px;
 	text-align: center;
@@ -134,7 +134,7 @@ ul li {
 	float: left;
 	width: 200px;
 	text-align: center;
-	margin: 85px 0 0 75px;
+	margin: 35px 0 0 75px;
 }
 
 #templatemo_header  #site_title a {
@@ -326,12 +326,23 @@ ul li {
 	padding: 20px 20px 10px 20px; */
 }
 
+<<<<<<< HEAD
+=======
+#registration_form form select {
+        width: 450px;
+        padding: 10px 0;
+        background: #cccccc;
+        color: #000000;
+        border: 1px solid #000000;
+}
+
+>>>>>>> arconis25/master
 #registration_form form .input_field {
 	width: 450px;
 	padding: 10px 0;
-	background: #663300;
-        color: #a69135;
-	border: 1px solid #917e28;
+	background: #cccccc;
+        color: #000000;
+	border: 1px solid #000000;
 }
 
 #registration_form form label {
@@ -344,20 +355,20 @@ ul li {
 #registration_form form textarea {
 	width: 450px;
 	height: 200px;
-	background: #a69135;
-	border: 1px solid #917e28;
+	background: #cccccc;
+	border: 1px solid #000000;
 }
 
 #registration_form form .submit_btn {
 	margin-right: 40px;
-	background: #a69135;
+	background: #cccccc;
 	padding: 5px 10px;
-	border: 1px solid #917e28;
+	border: 1px solid #000000;
 }
 
 #registration_form div .field_with_errors input {
-        background: #FFFF66;
-        color: #a69135;
+        background: #cccccc;
+        color: #000000;
 }
 
 /* end of registration form */
