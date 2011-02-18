@@ -34,3 +34,7 @@ gem 'factory_girl_rails', '1.0'
 # group :development, :test do
 #   gem 'webrat'
 # end
+group :test do
+  gem 'gherkin', "=2.1.5"
+  gem 'cucumber', "=0.8.5"
+end

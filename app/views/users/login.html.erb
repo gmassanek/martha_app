@@ -1,0 +1,20 @@
+<h3>User Login</h3>
+
+<% flash.each do |key, value| %>
+  <div  id="error_explanation">
+    <ul>
+      <li><%= value %></li>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_tag :action => "login" do %>
+  <%= label_tag(:name, "Username: ") %>
+  <%= text_field_tag(:name) %>
+  <br/>
+  <%= label_tag(:password, "Password: ") %>
+  <%= password_field_tag(:password) %>
+  <br/>
+  <%= submit_tag("Login") %>
+<% end %>

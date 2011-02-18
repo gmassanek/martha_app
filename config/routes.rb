@@ -1,4 +1,14 @@
 MarthaApp::Application.routes.draw do
+  #get "users/login"
+  match '/admin/login', :to => 'users#login'
+  match '/admin', :to => 'users#welcome'
+  match '/logout', :to => 'users#logout'
+  get "users/signup"
+  get "users/welcome"
+  get "users/hidden"
+  #get "users/logout"
+  get "users/index"
+
   resources :registrations
   match '/register', :to => 'registrations#new'
   match '/home', :to => 'pages#home'

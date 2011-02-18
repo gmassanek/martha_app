@@ -4,4 +4,10 @@
   <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %>
   |
   <%= link_to "University of Maryland", 'http://www.umd.edu' %>
+  |
+  <% if session[:user] %>
+  <%= link_to "Admin Logout", logout_path %>
+  <% else %>
+  <%= link_to "Admin", admin_path %>
+  <% end %>
 </div>

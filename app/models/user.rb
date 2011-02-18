@@ -24,10 +24,14 @@ class User < ActiveRecord::Base
             :if => :password_required?
 
   validates :role, :presence => true
+  validates :name, :presence => true,
+                    :length => {:within => 4..40},
+                    :uniqueness => {:case_sensitive => false}
   validate :valid_role
                    
 
   attr_accessor :password
+  attr_protected :id, :salt
   attr_accessible :name, :password, :password_confirmation, :role
   
   before_save :save_encrypt_password
@@ -44,8 +48,15 @@ class User < ActiveRecord::Base
     errors.add_to_base("Must be a valid role") unless Roles.include?(role)
   end
   
+  def self.authenticate(name, pass)
+    u=find(:first, :conditions=>["name = ?", name])
+    return nil if u.nil?
+    return u if u.valid_password?(pass)
+    nil
+  end
+  
   def valid_password?(submitted_password)
-    encrypted_password == encrypt_with_salt(submitted_password)
+    encrypted_password == encrypt(salt, submitted_password)
   end
 
   private
@@ -54,10 +65,10 @@ class User < ActiveRecord::Base
   end
   def save_encrypt_password
     self.salt = make_salt if salt.nil?
-    self.encrypted_password = encrypt_with_salt(password)
+    self.encrypted_password = encrypt(salt, password)
   end
-  def encrypt_with_salt(string)
-    secure_hash("#{string}--#{password}")
+  def encrypt(string1, string2)
+    secure_hash("#{string1}--#{string2}")
   end
   def make_salt
     secure_hash("#{Time.now.utc}--#{password}")

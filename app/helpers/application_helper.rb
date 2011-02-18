@@ -14,7 +14,7 @@ module ApplicationHelper
     class_info = "#{class_info} current"
     html_options.merge!({ :class => class_info }) if current_page?(options)
     link_to name, options, html_options
-  end 
+  end
 end
 
 
