@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110216043802
+# Schema version: 20110218001813
 #
 # Table name: users
 #
@@ -9,11 +9,10 @@
 #  created_at         :datetime
 #  updated_at         :datetime
 #  encrypted_password :string(255)
+#  role               :string(255)
 #
 
 class User < ActiveRecord::Base
-  has_many :user_roles
-  has_many :roles, :through => :user_roles
   
   validates :password,  :presence => true,
                         :confirmation => true,
@@ -24,10 +23,26 @@ class User < ActiveRecord::Base
             :presence => true,
             :if => :password_required?
 
+  validates :role, :presence => true
+  validate :valid_role
+                   
+
   attr_accessor :password
-  attr_accessible :name, :password, :password_confirmation
+  attr_accessible :name, :password, :password_confirmation, :role
   
   before_save :save_encrypt_password
+  
+  Roles = %w{admin speaker attendee}
+  
+  Roles.each do |r|
+    define_method ":#{r}?" do
+      self.role == r
+    end
+  end
+
+  def valid_role
+    errors.add_to_base("Must be a valid role") unless Roles.include?(role)
+  end
   
   def valid_password?(submitted_password)
     encrypted_password == encrypt_with_salt(submitted_password)

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110216043802) do
+ActiveRecord::Schema.define(:version => 20110218001813) do
 
   create_table "registrations", :force => true do |t|
     t.string   "name"
@@ -27,28 +27,13 @@ ActiveRecord::Schema.define(:version => 20110216043802) do
     t.string   "credentials"
   end
 
-  create_table "roles", :force => true do |t|
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "roles", ["name"], :name => "index_roles_on_name"
-
-  create_table "user_roles", :force => true do |t|
-    t.integer  "user_id"
-    t.integer  "role_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.text     "salt"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "encrypted_password"
+    t.string   "role"
   end
 
 end

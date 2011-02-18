@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110216043802
+# Schema version: 20110218001813
 #
 # Table name: users
 #
@@ -9,6 +9,7 @@
 #  created_at         :datetime
 #  updated_at         :datetime
 #  encrypted_password :string(255)
+#  role               :string(255)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
