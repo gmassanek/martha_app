@@ -3,9 +3,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: martha_dev
+  database: rails_development
   pool: 5
-  username: blake
+  username: geoff
   min_messages: warning
 
 # Warning: The database defined as "test" will be erased and
