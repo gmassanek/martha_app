@@ -1,0 +1,35 @@
+<h1>Registrations</h1>
+<% flash.each do |key, value| %>
+  <div  id="error_explanation">
+    <ul>
+      <li><%= value %></li>
+    </ul>
+  </div>
+<% end %>
+<div id="gallery">
+  <ul>
+    <% @registrations.each do |reg| %>
+      <li>
+        <h5><%= reg.name %></h5>
+        <p>
+          Email: <%= reg.email %><br/>
+          Home Phone: <%= reg.home_phone %><br/>
+          Cell Phone: <%= reg.cell_phone %><br/>
+          Address 1: <%= reg.address_1 %><br/>
+          Address 2: <%= reg.address_2 %><br/>
+          City: <%= reg.city %><br/>
+          State: <%= reg.state %><br/>
+          Zip: <%= reg.zip %><br/>
+          Credentials: <%= reg.credentials %><br/>
+          Payment:
+            <% if reg.paid_date.nil? then %>
+                Not Received (<%= link_to "Mark as Paid", :controller => "admin", :action => "confirm_payment", :registration => reg %>)<br/>
+            <% else %>
+              Received <%= reg.paid_date.strftime '%m/%d/%Y %I:%M %P' %> <br/>
+            <% end %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div class="cleaner"/>

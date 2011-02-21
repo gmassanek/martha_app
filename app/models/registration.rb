@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110215011311
+# Schema version: 20110220190213
 #
 # Table name: registrations
 #
@@ -16,13 +16,13 @@
 #  state       :string(255)
 #  zip         :string(255)
 #  credentials :string(255)
+#  paid_date   :datetime
 #
 
 class Registration < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
-  attr_accessible :name, :email, :home_phone, :cell_phone, :address_1,
-                  :address_2, :city, :state, :zip, :credentials
+  attr_accessible :name, :email, :home_phone, :cell_phone, :address_1, :address_2, :city, :state, :zip, :credentials, :paid_date
 
   validates :name,
       :presence => true,
