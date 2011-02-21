@@ -1,31 +1,17 @@
-# SQLite version 3.x
-#   gem install sqlite3-ruby (not necessary on OS X Leopard)
-development:
+common: &common
   adapter: postgresql
-  encoding: unicode
-  database: rails_development
-  pool: 5
   username: geoff
-  min_messages: warning
+  password: mass2742 # from psql setup, see Postgresql
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test: &test
-  adapter: postgresql
-  encoding: unicode
-  database: rails_test
-  pool: 5
-  username: geoff
-  min_messages: warning
+development:
+  <<: *common
+  database: martha_prod
+
+test:
+  <<: *common
+  database: myapp_test
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  <<: *common
   database: martha_prod
-  pool: 5
-  username: geoff
-  min_messages: warning
 
-cucumber:
-  <<: *test
