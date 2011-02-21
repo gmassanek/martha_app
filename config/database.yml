@@ -4,8 +4,9 @@ common: &common
   password: mass2742 # from psql setup, see Postgresql
 
 development:
-  <<: *common
-  database: martha_prod
+  adapter: postgresql
+  username: geoff
+  database: rails_development
 
 test:
   <<: *common
