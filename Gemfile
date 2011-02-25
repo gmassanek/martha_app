@@ -17,6 +17,13 @@ gem 'sendgrid'
 
 # Deploy with Capistrano
 # gem 'capistrano'
+gem "rspec"
+gem 'database_cleaner'
+gem 'cucumber-rails'
+gem 'cucumber'
+gem 'rspec-rails'
+gem 'spork'
+gem 'capybara'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
@@ -35,6 +42,4 @@ gem 'sendgrid'
 #   gem 'webrat'
 # end
 group :test do
-  gem 'gherkin', "=2.1.5"
-  gem 'cucumber', "=0.8.5"
 end

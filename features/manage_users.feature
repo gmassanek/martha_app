@@ -5,5 +5,5 @@ Feature: Manage Users
 
   Scenario: Users List
     Given I am a User named Martha
-    When I go to the list of users
+    When I go to admin users
     Then I should see "Martha"

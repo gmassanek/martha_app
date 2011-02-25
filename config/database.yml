@@ -8,7 +8,7 @@ development:
   username: geoff
   database: rails_development
 
-test:
+test: &test
   <<: *common
   database: myapp_test
 
@@ -16,3 +16,6 @@ production:
   <<: *common
   database: martha_prod
 
+
+cucumber:
+  <<: *test

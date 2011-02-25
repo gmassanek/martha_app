@@ -24,6 +24,7 @@ class AdminController < ApplicationController
   end
 
   def users
+    @users = User.find(:all, :order => :name)
   end
 
 end

@@ -19,4 +19,7 @@ class UsersController < ApplicationController
     redirect_to :action => 'login'
   end
 
+  def reset_password
+
+  end
 end
