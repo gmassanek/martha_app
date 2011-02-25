@@ -75,6 +75,7 @@ GEM
       rake (>= 0.8.7)
       thor (~> 0.14.4)
     rake (0.8.7)
+    sendgrid (0.1.4)
     term-ansicolor (1.0.5)
     thor (0.14.6)
     treetop (1.4.9)
@@ -92,3 +93,4 @@ DEPENDENCIES
   gherkin (= 2.1.5)
   pg
   rails (= 3.0.3)
+  sendgrid
