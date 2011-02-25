@@ -21,14 +21,14 @@ class RegistrationsController < ApplicationController
       # Handle a successful save.
       RegistrationMailer.welcome_email(@registration).deliver
       
-      format.html { redirect_to(@registration, :notice => 'User was successfully created.') }
-      format.xml  { render :xml => @registration, :status => :created, :location => @registration }
+      #format.html { redirect_to(@registration, :notice => 'User was successfully created.') }
+      #format.xml  { render :xml => @registration, :status => :created, :location => @registration }
       redirect_to registration_path(@registration)
 
     else
       @title = "Sign up"
-      format.html { render :action => "new" }
-      format.xml  { render :xml => @registration.errors, :status => :unprocessable_entity }
+      #format.html { render :action => "new" }
+      #format.xml  { render :xml => @registration.errors, :status => :unprocessable_entity }
 
       render :action=>'new'
       #redirect_to register_path
