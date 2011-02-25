@@ -46,4 +46,13 @@ MarthaApp::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  ActionMailer::Base.smtp_settings = {
+    :address => "smtp.sendgrid.net",
+    :port => 25,
+    :domain => "acutecareleadershipsummit.com",
+    :authentication => :plain,
+    :user_name => "geoff.massanek@gmail.com",
+    :password => "mass2742"
+  }
 end
