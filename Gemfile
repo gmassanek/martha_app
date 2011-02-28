@@ -10,7 +10,7 @@ gem 'pg'
 gem 'annotate-models', '1.0.4'
 gem 'factory_girl_rails', '1.0'
 gem 'sendgrid'
-
+gem 'jrails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

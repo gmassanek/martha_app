@@ -65,6 +65,7 @@ GEM
     gherkin (2.1.5)
       trollop (~> 1.16.2)
     i18n (0.5.0)
+    jrails (0.6.0)
     json_pure (1.4.6)
     mail (2.2.15)
       activesupport (>= 2.3.6)
@@ -134,6 +135,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   factory_girl_rails (= 1.0)
+  jrails
   pg
   rails (= 3.0.3)
   rspec

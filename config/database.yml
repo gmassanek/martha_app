@@ -1,7 +1,7 @@
 common: &common
   adapter: postgresql
   username: geoff
-  password: mass2742 # from psql setup, see Postgresql
+  passwore: mass2742 # from psql setup, see Postgresql
 
 development:
   adapter: postgresql
