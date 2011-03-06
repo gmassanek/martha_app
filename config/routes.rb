@@ -1,15 +1,17 @@
 MarthaApp::Application.routes.draw do
+  resources :announcements
+  resources :registrations
+  resources :users
+
+  get "users/reset_password"
   get "admin/index"
   get "admin/registrations"
-  get "admin/users"
-  get "users/reset_password"
   get "admin/confirm_payment"
+
+  match '/register', :to => 'registrations#new'
   match '/admin', :to => 'admin#index'
   match '/login', :to => 'users#login'
   match '/logout', :to => 'users#logout'
-
-  resources :registrations
-  match '/register', :to => 'registrations#new'
   match '/home', :to => 'pages#home'
   match '/event', :to => 'pages#event'
   match '/info', :to => 'pages#info'
@@ -71,3 +73,4 @@ MarthaApp::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+

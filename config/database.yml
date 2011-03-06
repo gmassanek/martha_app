@@ -1,12 +1,12 @@
 common: &common
   adapter: postgresql
   username: geoff
-  passwore: mass2742 # from psql setup, see Postgresql
+  password: mass2742 # from psql setup, see Postgresql
 
 development:
   adapter: postgresql
   username: geoff
-  database: rails_development
+  database: martha_develop
 
 test: &test
   <<: *common
@@ -19,3 +19,4 @@ production:
 
 cucumber:
   <<: *test
+

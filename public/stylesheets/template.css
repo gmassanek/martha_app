@@ -8,7 +8,7 @@ body {
 	color: #000000;
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size:13px;
-	line-height:1.5em; 
+	line-height:1.5em;
 	background-color: #888888;
 	background-image: url(../images/templatemo_body.jpg);
 	background-position: top;
@@ -200,7 +200,7 @@ ul li {
 	padding: 2px 30px;
 	font-size: 14px;
 	text-decoration: none;
-	color: #fd9e9e;	
+	color: #fd9e9e;
 	font-weight: bold;
 	outline: none;
 	background: url(../images/templatemo_menu_divider.png) repeat-y right;
@@ -222,7 +222,7 @@ ul li {
 	clear: both;
 	width: 930px;
 	padding: 50px 25px;
-} 
+}
 
 #templatemo_content {
 	float: left;
@@ -239,7 +239,7 @@ ul li {
 	clear: both;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
-	background: url(images/hor_divider.jpg) bottom repeat-x;	
+	background: url(images/hor_divider.jpg) bottom repeat-x;
 }
 
 .post_box .post_content {
@@ -247,7 +247,7 @@ ul li {
 	margin: 10px 0;
 }
 .post_content .left {
-	float: left; 
+	float: left;
 	width: 370px;
 }
 
@@ -257,7 +257,7 @@ ul li {
 }
 
 .post_content .right {
-	float: right; 
+	float: right;
 	width: 370px;
 }
 
@@ -293,19 +293,19 @@ ul li {
 	#gallery ul { list-style: none; margin: 0; padding: 0; }
 	#gallery ul li {
 		float: left;
-		display: inline; 
+		display: inline;
 		padding: 0;
 		margin: 0;
 		width: 250px;
 		margin: 0 30px 40px 0;
 	}
-	
+
 	#gallery ul li h5 {
 		padding-bottom: 10px;
 		margin-bottom: 10px;
 		border-bottom: 1px dotted #7f6d20;
 	}
-	 
+
 	#gallery ul img {
 		width: 217px;
 		height: 120px;
@@ -326,8 +326,6 @@ ul li {
 	padding: 20px 20px 10px 20px; */
 }
 
-<<<<<<< HEAD
-=======
 #registration_form form select {
         width: 450px;
         padding: 10px 0;
@@ -336,7 +334,6 @@ ul li {
         border: 1px solid #000000;
 }
 
->>>>>>> arconis25/master
 #registration_form form .input_field {
 	width: 450px;
 	padding: 10px 0;
@@ -349,7 +346,7 @@ ul li {
 	display: block;
 	width: 450px;
 	margin-right: 10px;
-	font-size: 14px;	
+	font-size: 14px;
 }
 
 #registration_form form textarea {
@@ -450,7 +447,7 @@ ul li {
 	padding: 0 15px 4px 0;
 	font-size: 11px;
 	font-weight: bold;
-	color: #333;	
+	color: #333;
 	text-align: center;
 	vertical-align: bottom;
 	white-space: pre;
@@ -506,3 +503,26 @@ ul li {
         color: #fff;
         background: url(../images/templatemo_button_hover.png) no-repeat;
 }
+
+/* announcements */
+.announcements {
+/*		width: 590px;
+		padding: 40px 0;*/
+	}
+	.announcements { list-style: none; margin: 0; padding: 0; }
+
+	.announcements h5 {
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px dotted #7f6d20;
+	}
+
+    .announcements p {
+        padding: 0px;
+    }
+	.announcements img {
+		width: 217px;
+		height: 120px;
+	}
+/* end of announcements */
+

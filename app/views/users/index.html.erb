@@ -1,0 +1,17 @@
+<h1>Users</h1>
+
+<div id="gallery">
+  <ul>
+    <% @users.each do |user| %>
+      <li>
+        <h3><%= user.name %></h3>
+        <p>
+          Role: <%= user.role %><br/>
+          <%= link_to "Reset Password", :controller => "users", :action => "reset_password", :user => user %>
+        </p>
+      </li>
+    <% end %>
+  </ul>
+</div>
+<div class="cleaner"/>
+

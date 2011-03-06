@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @title = "Home"
+    @announcements = Announcement.find(:all, :order => 'updated_at DESC')
   end
 
   def event
@@ -12,3 +13,4 @@ class PagesController < ApplicationController
   end
 
 end
+

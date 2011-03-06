@@ -23,8 +23,5 @@ class AdminController < ApplicationController
     redirect_to admin_registrations_path
   end
 
-  def users
-    @users = User.find(:all, :order => :name)
-  end
-
 end
+

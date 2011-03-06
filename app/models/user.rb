@@ -13,7 +13,7 @@
 #
 
 class User < ActiveRecord::Base
-  
+
   validates :password,  :presence => true,
                         :confirmation => true,
                         :length => {:within => 6..10},
@@ -28,16 +28,16 @@ class User < ActiveRecord::Base
                     :length => {:within => 4..40},
                     :uniqueness => {:case_sensitive => false}
   validate :valid_role
-                   
+
 
   attr_accessor :password
   attr_protected :id, :salt
   attr_accessible :name, :password, :password_confirmation, :role
-  
+
   before_save :save_encrypt_password
-  
+
   Roles = %w{admin speaker attendee}
-  
+
   Roles.each do |r|
     define_method ":#{r}?" do
       self.role == r
@@ -47,14 +47,14 @@ class User < ActiveRecord::Base
   def valid_role
     errors.add_to_base("Must be a valid role") unless Roles.include?(role)
   end
-  
+
   def self.authenticate(name, pass)
     u=find(:first, :conditions=>["name = ?", name])
     return nil if u.nil?
     return u if u.valid_password?(pass)
     nil
   end
-  
+
   def valid_password?(submitted_password)
     encrypted_password == encrypt(salt, submitted_password)
   end
@@ -77,7 +77,7 @@ class User < ActiveRecord::Base
   def secure_hash(string)
     Digest::SHA2.hexdigest(string)
   end
-  
-  
+
+
 end
 
