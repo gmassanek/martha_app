@@ -1,4 +1,6 @@
 MarthaApp::Application.routes.draw do
+  resources :subscriptions
+
   resources :announcements
   resources :registrations
   resources :users
