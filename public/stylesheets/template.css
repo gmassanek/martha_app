@@ -312,63 +312,55 @@ ul li {
 	}
 /* end of gallery */
 
-/* registration form */
 
-#registration_form {
-	float: left;
-	padding: 0;
+
+/*Simple Form CSS*/
+.simple_form label {
+  float: left;
+  width: 100px;
+  text-align: right;
+  margin: 2px 10px;
 }
 
-#registration_form form {
-	margin: 0px;
-	padding: 0px;
-	/*border:1px solid #e2d1be;
-	padding: 20px 20px 10px 20px; */
+.simple_form div.input {
+  margin-bottom: 10px;
 }
 
-#registration_form form select {
-        width: 450px;
-        padding: 10px 0;
-        background: #cccccc;
-        color: #000000;
-        border: 1px solid #000000;
+.simple_form div.boolean, .simple_form input[type='submit'] {
+  margin-left: 120px;
 }
 
-#registration_form form .input_field {
-	width: 450px;
-	padding: 10px 0;
-	background: #cccccc;
-        color: #000000;
-	border: 1px solid #000000;
+.simple_form div.boolean label, .simple_form label.collection_radio {
+  float: none;
+  margin: 0;
 }
 
-#registration_form form label {
-	display: block;
-	width: 450px;
-	margin-right: 10px;
-	font-size: 14px;
+.simple_form label.collection_radio {
+  margin-right: 10px;
+  margin-left: 2px;
 }
 
-#registration_form form textarea {
-	width: 450px;
-	height: 200px;
-	background: #cccccc;
-	border: 1px solid #000000;
+.simple_form .error {
+  clear: left;
+  margin-left: 150px;
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  color: #D00;
+  display: block;
+  width: 150px;
+  padding: 0;
 }
 
-#registration_form form .submit_btn {
-	margin-right: 40px;
-	background: #cccccc;
-	padding: 5px 10px;
-	border: 1px solid #000000;
+.simple_form .hint {
+  clear: left;
+  margin-left: 120px;
+  font-size: 12px;
+  color: #555;
+  display: block;
+  font-style: italic;
 }
-
-#registration_form div .field_with_errors input {
-        background: #cccccc;
-        color: #000000;
-}
-
-/* end of registration form */
+/*end Simple Form CSS*/
 
 /* sidebar */
 

@@ -4,47 +4,20 @@
 not be saved until payment has been received.</p>
 <hr>
 <div id="registration_form">
-  <%= form_for(@registration) do |f| %>
-    <%= render 'shared/error_messages' %>
-    <div class="field">
-      <%= f.label :name %>
-      <%= f.text_field :name, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :email %>
-      <%= f.text_field :email, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :home_phone %>
-      <%= f.text_field :home_phone, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :cell_phone %>
-      <%= f.text_field :cell_phone, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :address_1 %>
-      <%= f.text_field :address_1, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :address_2 %>
-      <%= f.text_field :address_2, :class=>"input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :city %>
-      <%= f.text_field :city, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :state %>
-      <%= f.select :state, states_array, {:include_blank => true}, :class=>"required input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :zip %>
-      <%= f.text_field :zip, :class=>"required input_field" %>
-    </div>
-    <div class="actions">
-      <%= f.submit "Sign up" %>
-    </div>
+  <%= simple_form_for(@registration) do |f| %>
+    <%= f.input :name, :as => :string %>
+    <%= f.input :email, :as => :email %>
+    <%= f.input :home_phone, :as => :tel, :label => 'Home'  %>
+    <%= f.input :cell_phone, :as => :tel, :label => 'Cell' %>
+    <%= f.input :address_1, :as => :string %>
+    <%= f.input :address_2, :as => :string %>
+    <%= f.input :city, :as => :string %>
+    <%= f.input :state, :collection => states_array%>
+    <%= f.input :zip, :as => :string %>
+    <%= f.button :submit, 'Submit' %>
   <% end %>
 </div>
-            <div class="cleaner"></div>
+<div class="cleaner"></div>
+
+
+
