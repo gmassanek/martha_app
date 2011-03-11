@@ -12,11 +12,12 @@ class AdminController < ApplicationController
     puts "========== About to confirm_payment"
     registration = Registration.find(params[:registration])
     #registration.paid_date = Time.now
-    puts registration.paid_date
+    puts registration
     #if registration.save then
     #if registration.update_attributes(:paid_date => Time.now) then
     if registration.update_attribute(:paid_date,Time.now) then
       flash[:message] = "#{registration.name}'s payment received."
+      RegistrationMailer.payment_email(registration).deliver
     else
       flash[:message] = "#{registration.name}'s payment could not be updated because the registration is invalid."
     end
