@@ -1,0 +1,48 @@
+<h1>Registrations</h1>
+<% flash.each do |key, value| %>
+  <div  id="error_explanation">
+    <ul>
+      <li><%= value %></li>
+    </ul>
+  </div>
+<% end %>
+  <div id="gallery">
+    <ul>
+        <table>
+            <tr>
+              <td><b>Name:        </b></td>
+              <td><b>Email:       </b></td>
+              <td><b>Home Phone:  </b></td>
+              <td><b>Cell Phone:  </b></td>
+              <td><b>Credentials: </b></td>
+              <td><b>Payment:     </b></td>
+            </tr>
+            <% @registrations.each do |reg| %>
+              <tr>
+                <td height = "50"><%= reg.name %>       </td>
+                <td><%= reg.email %>      </td>
+                <td><%= reg.home_phone %> </td>
+                <td><%= reg.cell_phone %> </td>
+                <!--
+                <td>Address 1: <%= reg.address_1 %></td>
+                <td>Address 2: <%= reg.address_2 %></td>
+                <td>City: <%= reg.city %></td>
+                <td>State: <%= reg.state %></td>
+                <td>Zip: <%= reg.zip %></td>
+                !-->
+                <td><%= reg.credentials %></td>
+                <td>
+                  <% if reg.paid_date.nil? then %>
+                      <% puts reg.id %>
+                      Not Received (<%= link_to "Mark as Paid", :action => "confirm_payment", :id => reg %>)
+                  <% else %>
+                    Received <%= reg.paid_date.strftime '%m/%d/%Y %I:%M %P' %> <br/>
+                  <% end %>
+                </td>
+              </tr>
+          <% end %>
+      </table>
+    </ul>
+  </div>
+<div class="cleaner"/>
+

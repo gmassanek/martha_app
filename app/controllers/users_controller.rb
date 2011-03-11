@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_filter :login_required, :only => [:index]
+  before_filter :login_required, :except => [:login, :logout]
   def login
     @title = "Login"
     if request.post?
@@ -17,9 +17,6 @@ class UsersController < ApplicationController
     flash[:message] = 'Logged out'
     redirect_to :action => 'login'
   end
-  def reset_password
-
-  end
 
   def index
     @users = User.find(:all, :order => :name)
@@ -32,6 +29,9 @@ class UsersController < ApplicationController
   end
 
   def show
+  end
+
+  def new
   end
 end
 

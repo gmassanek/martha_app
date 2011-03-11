@@ -1,14 +1,10 @@
 MarthaApp::Application.routes.draw do
-  resources :subscriptions
-
-  resources :announcements
-  resources :registrations
-  resources :users
 
   get "users/reset_password"
   get "admin/index"
   get "admin/registrations"
   get "admin/confirm_payment"
+  get "registrations/confirm_payment"
 
   match '/register', :to => 'registrations#new'
   match '/admin', :to => 'admin#index'
@@ -17,6 +13,12 @@ MarthaApp::Application.routes.draw do
   match '/home', :to => 'pages#home'
   match '/event', :to => 'pages#event'
   match '/info', :to => 'pages#info'
+
+  resources :subscriptions
+
+  resources :announcements
+  resources :registrations
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
