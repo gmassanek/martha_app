@@ -18,7 +18,7 @@
           <td><b>Payment:     </b></td>
           </tr>
        <% @registrations.each do |reg| %>
-          <div> 
+          <div>
           <tr>
           <td height = "50"><%= reg.name %>       </td>
           <td><%= reg.email %>      </td>
@@ -31,7 +31,7 @@
           <td>Zip: <%= reg.zip %></td>
 !-->
           <td><%= reg.credentials %></td>
-          <td>Payment:
+          <td>
             <% if reg.paid_date.nil? then %>
                 Not Received (<%= link_to "Mark as Paid", :controller => "admin", :action => "confirm_payment", :registration => reg %>)
             <% else %>
@@ -47,3 +47,4 @@
   </ul>
 </div>
 <div class="cleaner"/>
+
