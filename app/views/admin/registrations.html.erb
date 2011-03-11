@@ -8,28 +8,42 @@
 <% end %>
 <div id="gallery">
   <ul>
-    <% @registrations.each do |reg| %>
-      <li>
-        <h5><%= reg.name %></h5>
-        <p>
-          Email: <%= reg.email %><br/>
-          Home Phone: <%= reg.home_phone %><br/>
-          Cell Phone: <%= reg.cell_phone %><br/>
-          Address 1: <%= reg.address_1 %><br/>
-          Address 2: <%= reg.address_2 %><br/>
-          City: <%= reg.city %><br/>
-          State: <%= reg.state %><br/>
-          Zip: <%= reg.zip %><br/>
-          Credentials: <%= reg.credentials %><br/>
-          Payment:
+      <table>
+          <tr>
+          <td><b>Name:        </b></td>
+          <td><b>Email:       </b></td>
+          <td><b>Home Phone:  </b></td>
+          <td><b>Cell Phone:  </b></td>
+          <td><b>Credentials: </b></td>
+          <td><b>Payment:     </b></td>
+          </tr>
+       <% @registrations.each do |reg| %>
+          <div> 
+          <tr>
+          <td height = "50"><%= reg.name %>       </td>
+          <td><%= reg.email %>      </td>
+          <td><%= reg.home_phone %> </td>
+          <td><%= reg.cell_phone %> </td>
+<!--      <td>Address 1: <%= reg.address_1 %></td>
+          <td>Address 2: <%= reg.address_2 %></td>
+          <td>City: <%= reg.city %></td>
+          <td>State: <%= reg.state %></td>
+          <td>Zip: <%= reg.zip %></td>
+!-->
+          <td><%= reg.credentials %></td>
+          <td>Payment:
             <% if reg.paid_date.nil? then %>
-                Not Received (<%= link_to "Mark as Paid", :controller => "admin", :action => "confirm_payment", :registration => reg %>)<br/>
+                Not Received (<%= link_to "Mark as Paid", :controller => "admin", :action => "confirm_payment", :registration => reg %>)
             <% else %>
               Received <%= reg.paid_date.strftime '%m/%d/%Y %I:%M %P' %> <br/>
             <% end %>
-        </p>
-      </li>
-    <% end %>
+          </td>
+          </tr>
+        </div>
+      <% end %>
+    </table>
+  </div>
+
   </ul>
 </div>
 <div class="cleaner"/>

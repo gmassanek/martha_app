@@ -7,6 +7,7 @@ not be saved until payment has been received.</p>
   <%= simple_form_for(@registration) do |f| %>
     <%= f.input :name, :as => :string %>
     <%= f.input :email, :as => :email %>
+    <%= f.input :credentials, :as => :string %>
     <%= f.input :home_phone, :as => :tel, :label => 'Home'  %>
     <%= f.input :cell_phone, :as => :tel, :label => 'Cell' %>
     <%= f.input :address_1, :as => :string %>
