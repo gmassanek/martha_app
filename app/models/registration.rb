@@ -24,6 +24,12 @@ class Registration < ActiveRecord::Base
   
   attr_accessible :name, :email, :home_phone, :cell_phone, :address_1, :address_2, :city, :state, :zip, :credentials, :paid_date
 
+#this code sanitizes the phone number so that it is only digits before it is saved
+before_validation(:on => :create) do
+  self.home_phone = home_phone.gsub(/[^0-9]/, "")
+  self.cell_phone = cell_phone.gsub(/[^0-9]/, "")
+end
+
   validates :name,
       :presence => true,
       :length => { :within => 4..40 }
@@ -31,14 +37,15 @@ class Registration < ActiveRecord::Base
   validates :email,
       :presence => true,
       :format => {:with => email_regex}
-  
-  validates :home_phone, :presence => true
-  validates :cell_phone, :presence => true
+
+
+  validates :home_phone, :presence => true, :length => { :is => 10 }
+  validates :cell_phone, :presence => true, :length => { :is => 10 }
   validates :address_1, :presence => true
   validates :city, :presence => true
   validates :state, :presence => true
   validates :zip, :presence => true
-  validates_as_phone :home_phone, :cell_phone
+  #validates_as_phone :home_phone, :cell_phone
 
                 
 end
