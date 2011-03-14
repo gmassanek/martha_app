@@ -4,12 +4,12 @@ class PagesController < ApplicationController
     @announcements = Announcement.find(:all, :order => 'updated_at DESC')
   end
 
-  def event
-    @title = "Event Information"
+  def conference
+    @title = "Conference Information"
   end
 
   def info
-    @title = "Other Informaton"
+    @title = "Hotel and Travel Informaton"
   end
 
 end

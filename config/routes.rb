@@ -11,8 +11,9 @@ MarthaApp::Application.routes.draw do
   match '/login', :to => 'users#login'
   match '/logout', :to => 'users#logout'
   match '/home', :to => 'pages#home'
-  match '/event', :to => 'pages#event'
+  match '/conference', :to => 'pages#conference'
   match '/info', :to => 'pages#info'
+  match 'downloads/light_rail_map', :to => 'downloads#light_rail_map'
 
   resources :subscriptions
 
