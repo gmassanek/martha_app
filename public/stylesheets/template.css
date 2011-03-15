@@ -341,6 +341,12 @@ ul li {
 	float:right;
 	width:48%;
 }
+.simple_form li input.right
+{
+	display:inline;
+	float:right;
+	width:48%;
+}
 
 .simple_form li div.left .medium
 {
