@@ -2,7 +2,7 @@
 <% if !session[:user].nil? && session[:user].role == "admin" %>
   <%= link_to "Edit", edit_announcement_path(ann.id) %>
 <% end %>
-<p><%= ann.text %></p>
+<p><%= raw ann.text %></p>
 <%= ann.updated_at.strftime("%m/%d/%Y at %I:%M%p")  %>
 <br/>
 <br/>

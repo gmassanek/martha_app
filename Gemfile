@@ -12,6 +12,7 @@ gem 'factory_girl_rails', '1.0'
 gem 'sendgrid'
 gem 'jrails'
 gem 'simple_form'
+gem 'RedCloth'
 
 # Use unicorn as the web server
 # gem 'unicorn'
