@@ -9,8 +9,7 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size:13px;
 	line-height:1.5em;
-	background-color: #888888;
-	background-image: url(../images/templatemo_body.jpg);
+	background-color: #DDDDDD;
 	background-position: top;
 	background-repeat: repeat-x;
 }
@@ -64,7 +63,7 @@ h6 { font-size: 14px; margin: 0 0 5px 0; padding: 0;}
 
 .image_wrapper {
 	display: inline-block;
-	padding: 7px;
+	padding: 8px;
 	border: 1px solid #bc3d3d;
 	background: #5f4f4f;
 }
@@ -127,7 +126,7 @@ ul li {
 	width: 980px;
 	height: 233px;
 	padding: 0;
-	background: url(../images/hopkinsHeader2.png)
+	background: url(../images/hopkinsHeader7.png)
 }
 
 #templatemo_header  #site_title {
