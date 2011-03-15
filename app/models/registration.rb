@@ -18,6 +18,13 @@
 #  credentials :string(255)
 #  paid_date   :datetime
 #
+#New Fields
+# => last_name
+# => organization
+# => 
+#
+#
+#
 
 class Registration < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
@@ -31,6 +38,10 @@ before_validation(:on => :create) do
 end
 
   validates :name,
+      :presence => true,
+      :length => { :within => 4..40 }
+
+  validates :last_name,
       :presence => true,
       :length => { :within => 4..40 }
   

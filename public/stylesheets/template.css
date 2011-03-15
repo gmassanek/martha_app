@@ -322,6 +322,38 @@ ul li {
   margin: 2px 10px;
 }
 
+.simple_form li div
+{
+	color:#444;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+.simple_form li div.left
+{
+	display:inline;
+	float:left;
+	width:48%;
+}
+
+.simple_form li div.right
+{
+	display:inline;
+	float:right;
+	width:48%;
+}
+
+.simple_form li div.left .medium
+{
+	width:100%;
+}
+
+.simple_form li div.right .medium
+{
+	width:100%;
+}
+
+
 .simple_form div.input {
   margin-bottom: 10px;
 }
