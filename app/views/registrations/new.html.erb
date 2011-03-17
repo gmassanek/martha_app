@@ -3,44 +3,18 @@
 <p>Fill out the registration below to secure your spot for the upcoming summit.  Please note, your spot will
 not be saved until payment has been received.</p>
 <hr>
-<div id="registration_form">
+<div class="centered" id="registration_form">
   <%= simple_form_for(@registration) do |f| %>
-    <div class="left">
-      <%= f.input :name, :as => :string, :label=> 'First Name'%>
-    </div>
-    <div class="right">
-      <%= f.input :last_name, :as => :string %>
-    </div>
-    <div class="left">
-      <%= f.input :email, :as => :email %>
-    </div>
-    <div class="right">
+      <%= f.input :name, :as => :string%>
       <%= f.input :credentials, :as => :string %>
-    </div>
-    <div class="left">
-      <%= f.input :home_phone, :as => :tel, :label => 'Home'  %>
-    </div>
-    <div class="right">
-      <%= f.input :cell_phone, :as => :tel, :label => 'Cell' %>
-    </div>
-    <div class="float_l">
+      <%= f.input :email, :as => :string %>
+      <%= f.input :home_phone, :as => :string, :label => 'Phone #'  %>
       <%= f.input :address_1, :as => :string %>
-    </div>
-    <div class="float_r">
       <%= f.input :address_2, :as => :string %>
-    </div>
-    <div class="float_l">
       <%= f.input :city, :as => :string %>
-    </div>
-    <div class="right">
       <%= f.input :state, :collection => states_array%>
-    </div>
-    <div class="float_l">
       <%= f.input :zip, :as => :string %>
-    </div>
-    <div class="right">
-      <%= f.button :submit, 'Submit', :class=>'right' %>
-    </div>
+      <%= f.button :submit, 'Submit', :class=>'center' %>
   <% end %>
 </div>
 <div class="cleaner"></div>

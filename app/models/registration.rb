@@ -34,7 +34,7 @@ class Registration < ActiveRecord::Base
 #this code sanitizes the phone number so that it is only digits before it is saved
 before_validation(:on => :create) do
   self.home_phone = home_phone.gsub(/[^0-9]/, "")
-  self.cell_phone = cell_phone.gsub(/[^0-9]/, "")
+  #self.cell_phone = cell_phone.gsub(/[^0-9]/, "")
 end
 
   validates :name,
