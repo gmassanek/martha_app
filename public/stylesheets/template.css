@@ -102,18 +102,18 @@ cite span { color: #fff; }
 	background: url(../images/templatemo_button_hover.png) no-repeat;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-image:  url(../images/list_icon.png);
-}
+/*ul {*/
+/*	margin: 0;*/
+/*	padding: 0;*/
+/*	list-style-image:  url(../images/list_icon.png);*/
+/*}*/
 
-ul li {
-	margin: 0 0 15px 30px;
-	padding: 0 0;
-}
+/*ul li {*/
+/*	margin: 0 0 15px 30px;*/
+/*	padding: 0 0;*/
+/*}*/
 
-#templatemo_wrapper {
+#wrapper {
 	width: 980px;
 	margin: 30px auto;
 }
@@ -213,14 +213,19 @@ ul li {
 	background: none;
 }
 
-/* end of menu */
+/* ============ end of menu ============ */
 
-/* content */
 
-#templatemo_main {
-	clear: both;
-	width: 930px;
-	padding: 50px 25px;
+/* ============ content ============ */
+
+#main {
+	width: 950px;
+	padding: 15px 15px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	min-height: 100%;
+	height: auto;
+	height: 100%;
 }
 
 #templatemo_content {
@@ -232,7 +237,7 @@ ul li {
 	width: 265px;
 }
 
-/* post */
+/* ============ post ============ */
 
 .post_box {
 	clear: both;
@@ -282,38 +287,38 @@ ul li {
 }
 
 
-/* end of post */
+/* ============ end of post ============ */
 
-/* gallery */
+/* ============ gallery ============*/
 #gallery {
-/*		width: 590px;
-		padding: 40px 0;*/
-	}
-	#gallery ul { list-style: none; margin: 0; padding: 0; }
-	#gallery ul li {
-		float: left;
-		display: inline;
-		padding: 0;
-		margin: 0;
-		width: 250px;
-		margin: 0 30px 40px 0;
-	}
+    /* width: 590px;
+	padding: 40px 0;*/
+}
+#gallery ul { list-style: none; margin: 0; padding: 0; }
+#gallery ul li {
+	float: left;
+	display: inline;
+	padding: 0;
+	margin: 0;
+	width: 250px;
+	margin: 0 30px 40px 0;
+}
 
-	#gallery ul li h5 {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-		border-bottom: 1px dotted #7f6d20;
-	}
+#gallery ul li h5 {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #7f6d20;
+}
 
-	#gallery ul img {
-		width: 217px;
-		height: 120px;
-	}
-/* end of gallery */
+#gallery ul img {
+	width: 217px;
+	height: 120px;
+}
+/* ============ end of gallery ============ */
 
 
 
-/*Simple Form CSS*/
+/* ============ Simple Form CSS ============ */
 #registration_form{
   margin-left: 35px;
 }
@@ -367,9 +372,9 @@ ul li {
   display: block;
   font-style: italic;
 }
-/*end Simple Form CSS*/
+/* ============ end Simple Form CSS ============ */
 
-/* sidebar */
+/* ============ sidebar ============ */
 
 #templatemo_sidebar {
 	float: right;
@@ -459,7 +464,10 @@ ul li {
 	background: url(../images/templatemo_button_hover.png) no-repeat;
 }
 
-/* end of sidebar */
+/* ============ end of sidebar ============ */
+
+
+/* ============ footer ============ */
 
 #templatemo_footer {
 	width: 920px;
@@ -474,9 +482,33 @@ ul li {
 	color: #ffadad;
 }
 
-/* end of footer */
+/* ============ end of footer ============ */
 
-/* Start Custom */
+/* ============ CUSTOM ============ */
+
+
+/* ============ announcements ============ */
+.announcements {
+/*	width: 590px;
+	padding: 40px 0;*/
+}
+.announcements { list-style: none; margin: 0; padding: 0; }
+
+.announcements h5 {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px dotted #7f6d20;
+}
+
+.announcements p {
+    padding: 0px;
+}
+.announcements img {
+	width: 217px;
+	height: 120px;
+}
+/* ============ end of announcements ============ */
+
 .field_with_errors {
   bg-color: red;
 }
@@ -493,8 +525,7 @@ ul li {
         font-weight: bold;
         color: #333;
         text-align: center;
-        vertical-align: bottom;
-        white-space: pre;
+        vertical-align: bottom; white-space: pre;
         border: none;
         background: url(../images/templatemo_button.png) no-repeat;
 }
@@ -504,25 +535,29 @@ ul li {
         background: url(../images/templatemo_button_hover.png) no-repeat;
 }
 
-/* announcements */
-.announcements {
-/*		width: 590px;
-		padding: 40px 0;*/
-	}
-	.announcements { list-style: none; margin: 0; padding: 0; }
+.center_div {
+    width: 620px;
+    padding: 0px;
+    min-height: 100%;
+    height: auto;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    height: 260px;
+}
 
-	.announcements h5 {
-		padding-bottom: 10px;
-		margin-bottom: 10px;
-		border-bottom: 1px dotted #7f6d20;
-	}
 
-    .announcements p {
-        padding: 0px;
-    }
-	.announcements img {
-		width: 217px;
-		height: 120px;
-	}
-/* end of announcements */
+/*http://jasonrudolph.com/css/screen.css*/
+.center_div ul {
+  display: inline;
+}
+.center_div li {
+  list-style-type: none;
+  float: left;
+  margin: 0 10px;
+}
+
+#arenas-of-awesome img.mega {
+  padding-bottom: 0em;
+}
 
