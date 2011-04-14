@@ -4,18 +4,23 @@
     <title><%= title %></title>
     <meta name="keywords" content="acute care, johns hopkins, umd, nursing, martha kennedy" />
     <meta name="description" content="Acute Care Leadership Summit" />
-    <%= stylesheet_link_tag 'gmass.css' %>
-    <!-- #<%= javascript_include_tag 'prototype.js' %> -->
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+    <%= stylesheet_link_tag 'template.css' %>
+    <!--<%= javascript_include_tag 'jquery' %>
+    <%= javascript_include_tag 'jquery-ui' %>
+    <%= javascript_include_tag 'jrails' %>
+    <%= javascript_include_tag 'googleanalytics' %>-->
+    <%= javascript_include_tag 'prototype.js' %>
     <%= csrf_meta_tag %>
   </head>
   <body>
-    <div id="container">
+    <div id="wrapper">
         <%= render 'layouts/header' %>
         <%= render 'layouts/menu' %>
-        <div id="main_content">
+        <div id="main">
           <%= yield %>
         </div>
-
         <%= render 'layouts/footer' %>
         <%= debug(params) if Rails.env.development? %>
     </div>

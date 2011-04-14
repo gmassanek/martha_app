@@ -1,13 +1,24 @@
-<div id="templatemo_footer">
-  <%= link_to "Acute Care Leadership Summit", home_path %>
-  |
-  <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %>
-  |
-  <%= link_to "University of Maryland", 'http://www.umd.edu' %>
-  |
-  <%= link_to "Admin", admin_path %>
-  <% if session[:user] %>
-    |
-    <%= link_to "Logout", logout_path %>
-  <% end %>
-</div>
+<footer>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "Acute Care Leadership Summit", home_path %>
+      </li>
+      <li>
+        <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %>
+      </li>
+      <li>
+        <%= link_to "University of Maryland", 'http://www.umd.edu' %>
+      </li>
+      <li>
+        <%= link_to "Admin", admin_path %>
+      </li>
+      <% if session[:user] %>
+        <li>
+          <%= link_to "Logout", logout_path %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+</footer>
+
