@@ -25,12 +25,25 @@ body {
 #main_content h2 {
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+nav ul {
+	padding: 5px 0 0 0;
+	clear: both;
+	overflow: hidden;
+}
+nav li {
+	display: inline;
+	margin: 10px;
+	list-style: none;
+	margin: 10px 10px 0 0;
+}
+
 /************** header **************/
 header {
 	text-align: left;
 	min-height: 100px;
-	border-bottom: 1px solid #284907;
-	margin-bottom: 15px;
+/*	border-bottom: 1px solid #284907;*/
+/*	margin-bottom: 15px;*/
 	padding: 15px;
 	letter-spacing: 20px;
 }
@@ -54,6 +67,19 @@ header h2 {
 
 /************** end header **************/
 
+/************** main nav **************/
+#top_nav {
+    background-color: white;
+	clear: both;
+	overflow: hidden;
+	border-top: 1px solid #284907;
+	padding: 0px;
+	font: 12px Verdana;
+	padding: 0 100px;
+	text-align: right;
+}
+
+/************** main nav **************/
 
 /************** footer **************/
 footer {
@@ -64,18 +90,6 @@ footer {
 	padding: 0px;
 	font: 12px Verdana;
 	text-align: center;
-}
-
-nav ul {
-	padding: 5px 0 0 0;
-	clear: both;
-	overflow: hidden;
-}
-nav li {
-	display: inline;
-	margin: 10px;
-	list-style: none;
-	margin: 0 25px 0 0
 }
 
 /************** end footer **************/
