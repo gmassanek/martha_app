@@ -1,24 +1,22 @@
 <footer>
   <nav>
     <ul>
-      <li>
-        <%= link_to "Acute Care Leadership Summit", home_path %>
-      </li>
-      <li>
-        <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %>
-      </li>
-      <li>
-        <%= link_to "University of Maryland", 'http://www.umd.edu' %>
-      </li>
-      <li>
-        <%= link_to "Admin", admin_path %>
-      </li>
+      <li> <%= link_to "Acute Care Leadership Summit", home_path %></li>
+      <li>|</li>
+      <li> <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %> </li>
+      <li>|</li>
+      <li> <%= link_to "University of Maryland", 'http://www.umd.edu' %> </li>
+      <li>|</li>
+      <li> <%= link_to "Admin", admin_path %> </li>
       <% if session[:user] %>
-        <li>
-          <%= link_to "Logout", logout_path %>
-        </li>
+        <li>|</li>
+        <li> <%= link_to "Logout", logout_path %> </li>
       <% end %>
     </ul>
   </nav>
+  <div style="text-align: left">
+  <br/><br/><br/>
+  <%= debug(params) if Rails.env.development? %>
+  </div>
 </footer>
 

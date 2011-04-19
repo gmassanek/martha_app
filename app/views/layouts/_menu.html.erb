@@ -1,10 +1,9 @@
 <nav id="top_nav">
     <ul>
-        <li><%= menu_link_to 'Home', root_path %></li>
-        <li><%= menu_link_to 'Conference Details', conference_path %></li>
-        <li><%= menu_link_to 'Register', register_path %></li>
-        <li><%= menu_link_to 'Hotel/Travel Information', info_path,  :class=>"last"%></li>
+        <%= menu_li 'Home', root_path %>
+        <%= menu_li 'Conference Details', conference_path %>
+        <%= menu_li 'Register', register_path %>
+        <%= menu_li 'Hotel/Travel Information', info_path,  :class=>"last"%>
     </ul>
-
 </nav>
 

@@ -15,6 +15,15 @@ module ApplicationHelper
     html_options.merge!({ :class => class_info }) if current_page?(options)
     link_to name, options, html_options
   end
+  def menu_li(name, options = {}, html_options = {})
+    lnk = link_to name, options, html_options
+    puts content_tag(:li, lnk, :class => "current")
+    if current_page?(options)
+        content_tag(:li, lnk, :class => "current") 
+    else
+      content_tag(:li, lnk)
+    end
+  end
 end
 
 
