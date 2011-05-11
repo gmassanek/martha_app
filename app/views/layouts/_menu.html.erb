@@ -1,9 +1,21 @@
-<nav id="top_nav">
-    <ul>
-        <%= menu_li 'Home', root_path %>
-        <%= menu_li 'Conference Details', conference_path %>
-        <%= menu_li 'Register', register_path %>
-        <%= menu_li 'Hotel/Travel Information', info_path,  :class=>"last"%>
-    </ul>
-</nav>
-
+<nav><!-- top nav -->
+		<div class="menu">
+			<ul>
+				<li><%= link_to "Home", home_path %></li>
+				<li><%= link_to "Conference Details", nil %>
+			    <ul>
+   					<li><a href="#">Our Team</a></li>
+   					<li><a href="#">History</a></li>
+   					<li><a href="">Vision</a></li>
+   				</ul>
+  			</li>
+				<li><%= link_to "Register", register_path %>
+					<ul>
+						<li><a href="#">Travel Planning</a></li>
+						<li><a href="#">Reservations</a></li>
+					</ul>
+				</li>
+				<li><%= link_to "Hotel/Travel", info_path %></li>
+			</ul>
+		</div>
+	</nav><!-- end of top nav -->

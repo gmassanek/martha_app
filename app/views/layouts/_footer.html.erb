@@ -1,22 +1,44 @@
 <footer>
-  <nav>
-    <ul>
-      <li> <%= link_to "Acute Care Leadership Summit", home_path %></li>
-      <li>|</li>
-      <li> <%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %> </li>
-      <li>|</li>
-      <li> <%= link_to "University of Maryland", 'http://www.umd.edu' %> </li>
-      <li>|</li>
-      <li> <%= link_to "Admin", admin_path %> </li>
-      <% if session[:user] %>
-        <li>|</li>
-        <li> <%= link_to "Logout", logout_path %> </li>
-      <% end %>
-    </ul>
-  </nav>
-  <div style="text-align: left">
-  <br/><br/><br/>
-  <%= debug(params) if Rails.env.development? %>
-  </div>
-</footer>
+		<section id="footer-area">
 
+			<section id="footer-outer-block">
+					<aside id="first" class="footer-segment">
+							<h3>Sponsors</h3>
+								<ul>
+
+									<li><%= link_to "Johns Hopkins", 'http://www.hopkinsmedicine.org/' %></li>
+									<li><%= link_to "University of Maryland", 'http://www.umd.edu' %></li>
+									<li><%= link_to "Hilton", 'http://www.hilton.com/en/hi/groups/personalized/B/BWICCHH-U08-20110906/index.jhtml' %></li>
+								</ul>
+					</aside><!-- end of #first footer segment -->
+
+					<aside id="second" class="footer-segment">
+							<h3>Adventure Travel</h3>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+									<li><a href="#">four linkylinks</a></li>
+									<li><a href="#">five linkylinks</a></li>
+								</ul>
+					</aside><!-- end of #second footer segment -->
+
+					<aside id="third" class="footer-segment">
+							<h3>River Cruises</h3>
+								<ul>
+									<li><a href="#">one linkylink</a></li>
+									<li><a href="#">two linkylinks</a></li>
+									<li><a href="#">three linkylinks</a></li>
+								</ul>
+					</aside><!-- end of #third footer segment -->
+					
+					<aside id="fourth" class="footer-segment">
+							<h3>Recent Testimonial</h3>
+								<p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+					</aside><!-- end of #fourth footer segment -->
+
+			</section><!-- end of #footer-outer-block -->
+		</section><!-- end of #footer-area -->
+	</footer>
+	
+      <%= debug(params) if Rails.env.development? %>

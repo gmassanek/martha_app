@@ -1,28 +1,35 @@
-<!-- <section class="sidebar">
-  Highlight one <br/>
-  other thing <br/>
-  is this a sidebar or  <br/>
-  would it be a floater? <br/>
-</section> -->
-<ul id="center_list">
-  <li>
-    <% img = image_tag "rss-icon-large.png", :alt=> "RSS" %>
-    <%= link_to img, conference_path  %>
-    <br />
-    <%= link_to "2011 Conference Details", conference_path  %>
-  </li>
-  <li>
-    <% img = image_tag "relevance-logo-large.png", :alt=> "RSS" %>
-    <%= link_to img, register_path  %>
-    <br />
-    <%= link_to "Register Now", register_path  %>
-  </li>
-  <li>
-    <% img = image_tag "getting-started-with-grails-v2-large.jpg", :alt=> "RSS" %>
-    <%= link_to img, info_path  %>
-    <br />
-    <%= link_to "Area Info", info_path  %>
-  </li>
-</ul>
+<section id="container"><!-- #container -->
+  <section id="content"><!-- #content -->
 
+    <article>
+      <h2><a href="#">Explore Beautiful, Strange, Exotic Lands</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+    </article>
 
+    <article>
+      <h2><a href="#">Adventure of a Lifetime</a></h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+    </article>
+  </section><!-- end of #content -->
+</section><!-- end of #container -->
+
+<aside id="sidebar"><!-- sidebar -->
+  <h3>Hotel and Air Packages</h3>
+  <ul>
+    <li><a href="#">India</a></li>
+    <li><a href="#">Thailand</a></li>
+    <li><a href="#">Japan</a></li>
+    <li><a href="#">Nepal</a></li>
+    <li><a href="#">Korea</a></li>
+  </ul>
+
+  <h3>Travel Weather Report</h3>
+  <a href="#"><img src="images/weathericons.png" alt="" /></a>
+  
+  <h3>Special Deals</h3>
+    <ul>
+    <li><a href="#">Weekday Rates</a></li>
+    <li><a href="#">Winter Deals</a></li>
+    <li><a href="#">Group Discounts</a></li>
+  </ul>								
+</aside><!-- end of sidebar -->
