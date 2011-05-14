@@ -14,7 +14,7 @@ MarthaApp::Application.routes.draw do
   match '/conference', :to => 'pages#conference'
   match '/info', :to => 'pages#info'
   match 'downloads/light_rail_map', :to => 'downloads#light_rail_map'
-
+  match '/planning', :to => 'pages#planning'
   resources :subscriptions
 
   resources :announcements

@@ -11,6 +11,10 @@ class PagesController < ApplicationController
   def info
     @title = "Hotel and Travel Informaton"
   end
+  
+  def planning
+    @title = "Planning Committee"
+  end
 
 end
 

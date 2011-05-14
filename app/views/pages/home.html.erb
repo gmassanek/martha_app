@@ -2,34 +2,55 @@
   <section id="content"><!-- #content -->
 
     <article>
-      <h2><a href="#">Explore Beautiful, Strange, Exotic Lands</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+      <h3>Welcome to the 2011 Acute Care Leadership Summit</h3>
+      
+      <p>
+        We have put together an exciting, collaborative, knowledge-sharing conference this year.  Make sure to <%= link_to "registration", register_path %> now.  Topics will include:
+        <br/>
+
+      </p>
+            <p></p>
+      <!-- make these smaller and indented even to the above title -->
+      <ul>
+        <li>NP/PA Residencies and Orientation</li>
+        <li>Mixed NP/PA Practice Models</li>
+        <li>Biling Practices</li>
+        <li>Professional Advancement Models</li>
+        <li>Outcome Measurement</li>
+        <li>And more</li>
+      </ul>
+
+      <!--<p>
+        The Acute Care Leadership Summit for Nurse Practitioners, Physician Assistants, and other interested parties was created in 2008 as an avenue for advanced practice nurses and nursing leaders to share ideas and innovative practices across the nation.-->
+        <!--This year's program will be held in Baltimore, Maryland and hosted by Advanced Practiced Leadership from The Johns Hopkins Hospital and University of Maryland Medical System. Please check back for more information as conference planning continues.
+        
+      </p>    -->
     </article>
 
     <article>
-      <h2><a href="#">Adventure of a Lifetime</a></h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc.</p>
+      <h2><a href="#">Announcements</a></h2>
     </article>
-  </section><!-- end of #content -->
-</section><!-- end of #container -->
+  </section>
+</section>
 
-<aside id="sidebar"><!-- sidebar -->
-  <h3>Hotel and Air Packages</h3>
-  <ul>
-    <li><a href="#">India</a></li>
-    <li><a href="#">Thailand</a></li>
-    <li><a href="#">Japan</a></li>
-    <li><a href="#">Nepal</a></li>
-    <li><a href="#">Korea</a></li>
-  </ul>
-
-  <h3>Travel Weather Report</h3>
-  <a href="#"><img src="images/weathericons.png" alt="" /></a>
+<aside id="sidebar">
+  <h3>Participant Survey</h3>
+  <p>
+    We strive to provide you with the information that will help you the most.  What are some topics that you would like to see addressed at this year's conference? 
+    <br/> <%= link_to "Let us know", root_path %> 
+  </p>
   
-  <h3>Special Deals</h3>
-    <ul>
-    <li><a href="#">Weekday Rates</a></li>
-    <li><a href="#">Winter Deals</a></li>
-    <li><a href="#">Group Discounts</a></li>
-  </ul>								
-</aside><!-- end of sidebar -->
+  <h3>Frequently Asked Questions</h3>
+  <ul>
+    <li><a href="#">Why would I go?</a></li>
+    <li><a href="#">Who's going to be there?</a></li>
+    <li><a href="#">Why did I do this to myself?</a></li>
+  </ul>						
+  
+  <h3>Contact Us</h3>
+  <p>
+    We'd love to hear from you!  Let us know your thoughts, questions, and concerns about the conference
+    <br/> <%= link_to "Contact us", root_path %> 
+  </p>
+  								
+</aside>
