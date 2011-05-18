@@ -6,7 +6,7 @@ padding: 0;
 }
 
 /* render html5 elements as block */
-header, footer, section, aside, nav, article {
+.header, .footer, .aside, .nav, .article {
 display: block;
 }
 
@@ -40,9 +40,7 @@ width: 280px;
 margin-top: 20px;
 }
 
-.menu,
-#main,
-#wrapper {
+.menu, #main, #wrapper {
 margin: 0 auto;
 width: 940px;
 }
@@ -100,19 +98,19 @@ li {
 padding-left: 5px;
 }
 
-/* header */
+/* .header */
 
-header {
+.header {
 margin-top: 20px;
 padding: 30px 0 0 0;
 }
 
-header img {
+.header img {
 border: none;
 padding: 15px;
 }
 
-header>h1 {
+.header>h1 {
 float: left;
 margin: 0 0 18px 0;
 width: 700px;
@@ -120,14 +118,14 @@ font-size: 30px;
 line-height: 36px;
 }
 
-header>h1 a {
+.header>h1 a {
 color: #372417;
 font-weight: bold;
 text-decoration: none;
 text-shadow: 0px 2px 3px #ddd;
 }
 
-header>h2 {
+.header>h2 {
 color: #777;
 clear: right;
 float: right;
@@ -137,9 +135,9 @@ width: 220px;
 text-shadow: 0px 2px 3px #ddd;
 }
 
-/* nav */
+/* .nav */
 
-nav {
+.nav {
 background: #372417;
 margin: 0 auto;
 width: 940px;
@@ -147,23 +145,23 @@ display: block;
 float: left;
 }
 
-nav .menu {
+.nav .menu {
 font-size: 16px;
 font-weight: bold;
 margin-left: 12px;
 }
 
-nav .menu ul {
+.nav .menu ul {
 list-style: none;
 margin: 0;
 }
 
-nav .menu li {
+.nav .menu li {
 float: left;
 position: relative;
 }
 
-nav .menu a {
+.nav .menu a {
 display: block;
 text-decoration: none;
 color: #E3B88F;
@@ -171,16 +169,16 @@ padding: 0 10px;
 line-height: 38px;
 }
 
-nav .menu a:hover {
+.nav .menu a:hover {
 color: #F9F0E8;
 }
 
-/* nav 1-level dropdowns */
-nav .menu li ul { 
+/* .nav 1-level dropdowns */
+.nav .menu li ul { 
 display: none; 
 }
 
-nav .menu ul li a {
+.nav .menu ul li a {
 display: block;
 text-decoration: none;
 color: #E3B88F;
@@ -188,24 +186,24 @@ background: #372417;
 margin-left: 1px;
 white-space: nowrap;
 }
-nav .menu ul li a:hover { 
+.nav .menu ul li a:hover { 
 background: #372417; 
 }
 
-nav .menu li:hover ul {
+.nav .menu li:hover ul {
 display: block;
 position: absolute;
 }
 
-nav .menu li:hover li {
+.nav .menu li:hover li {
 float: none;
 font-size: 12px;
 }
-nav .menu li:hover a { 
+.nav .menu li:hover a { 
 background: #372417; 
 }
 
-nav .menu li:hover li a:hover { 
+.nav .menu li:hover li a:hover { 
 background: #372417; 
 }
 
@@ -290,7 +288,7 @@ img.alignleft, img.alignright, img.aligncenter {
 margin-bottom: 12px;
 }
 
-/* sidebar and footer widget blocks */
+/* sidebar and .footer widget blocks */
 
 aside h3 {
 font-size: 18px;
@@ -307,7 +305,7 @@ aside img {
 border: none;
 }
 
-footer {
+.footer {
 margin-bottom: 20px;
 clear:both;
 }
