@@ -6,7 +6,7 @@ padding: 0;
 }
 
 /* render html5 elements as block */
-.header, .footer, ..sidebar, .nav, .article {
+.header, .footer, .#sidebar, .nav, .article {
 display: block;
 }
 
@@ -290,18 +290,18 @@ margin-bottom: 12px;
 
 /* sidebar and .footer widget blocks */
 
-.sidebar h3 {
+#sidebar h3 {
 font-size: 18px;
 line-height: 1.5em;
 text-shadow: 0px 2px 3px #ddd;
 }
 
-.sidebar ul {
+#sidebar ul {
 list-style: square inside;
 margin-bottom: 20px;
 }
 
-.sidebar img {
+#sidebar img {
 border: none;
 }
 
