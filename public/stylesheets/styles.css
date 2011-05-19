@@ -110,7 +110,7 @@ border: none;
 padding: 15px;
 }
 
-.header>h1 {
+.header h1 {
 float: left;
 margin: 0 0 18px 0;
 width: 700px;
@@ -118,22 +118,22 @@ font-size: 36px;
 line-height: 36px;
 }
 
-.header>h1 a {
+.header h1 a {
 color: #372417;
 font-weight: bold;
 text-decoration: none;
 text-shadow: 0px 2px 3px #ddd;
 }
 
-.header>h2 {
+.header h2 {
 color: #777;
 clear: right;
 float: right;
 font-style: italic;
-margin: 14px 0 18px 0;
+margin: 0px 0 18px 0;
 font-size: 36px;
 /*width: 220px;*/
-text-shadow: 0px 2px 3px #ddd;
+/*text-shadow: 0px 2px 3px #ddd;*/
 }
 
 /* .nav */
@@ -225,11 +225,15 @@ border-right: 1px #ddd solid;
 padding-right: 10px;
 }
 
-article {
+.article {
 padding: 10px;
 }
 
-article img {
+.article ul {
+list-style: square inside;
+}
+
+.article img {
 border: none;
 -webkit-box-shadow: 3px 3px 7px #777;
 -moz-box-shadow: 3px 3px 7px #777;
