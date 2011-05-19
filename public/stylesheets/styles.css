@@ -6,7 +6,7 @@ padding: 0;
 }
 
 /* render html5 elements as block */
-.header, .footer, .#sidebar, .nav, .article {
+.header, #footer, .#sidebar, .nav, .article {
 display: block;
 }
 
@@ -114,7 +114,7 @@ padding: 15px;
 float: left;
 margin: 0 0 18px 0;
 width: 700px;
-font-size: 30px;
+font-size: 36px;
 line-height: 36px;
 }
 
@@ -305,7 +305,7 @@ margin-bottom: 20px;
 border: none;
 }
 
-.footer {
+#footer {
 margin-bottom: 20px;
 clear:both;
 }
