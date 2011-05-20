@@ -148,6 +148,11 @@ float: left;
 font-size: 16px;
 font-weight: bold;
 margin-left: 12px;
+display: block;
+text-decoration: none;
+color: #E3B88F;
+padding: 0 10px;
+line-height: 38px;
 }
 
 .nav .menu ul {
@@ -219,8 +224,11 @@ margin-bottom: 36px;
 color: #444;
 font-size: 16px;
 line-height: 24px;
-border-right: 1px #ddd solid;
 padding-right: 10px;
+}
+
+.right_border {
+border-right: 1px #ddd solid;
 }
 
 .article {
@@ -320,5 +328,19 @@ padding: 18px 0;
 overflow: hidden;
 }
 
+hr {
+border-top: 1px #ddd solid;
+}
 
+.subtext {
 
+}
+
+form label {
+float:left;
+width:7em;
+}
+
+.input {
+    padding: 3px;
+}

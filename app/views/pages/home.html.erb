@@ -1,12 +1,11 @@
-<div id="container"><!-- #container -->
-  <div id="content"><!-- #content -->
+<div id="container" class="right_border">
+  <div id="content">
     <div class="article">
-      <h3>Welcome to the 2011 Acute Care Leadership Summit</h3>
+      <h2>2011 Acute Care Leadership Summit</h2>
       <p>
         We have put together an exciting, collaborative, knowledge-sharing conference this year.  Make sure to <%= link_to "register", register_path %> now.  Topics will include:
         <br/>
       </p>
-      <!-- make these smaller and indented even to the above title -->
       <ul>
         <li>NP/PA Residencies and Orientation</li>
         <li>Mixed NP/PA Practice Models</li>
@@ -22,7 +21,10 @@
       </p>    -->
     </div>
     <div class="article">
-      <h2><a href="#">Announcements</a></h2>
+      <h2>Announcements</h2>
+      <% @announcements.each do |announcement| %>
+        <%= render 'announcement', :ann => announcement	 %>
+      <% end %>
     </div>
   </div>
 </div>
@@ -34,17 +36,15 @@
     <br/> <%= link_to "Let us know", root_path %> 
   </p>
   
-  <h3>Frequently Asked Questions</h3>
+  <h3><%= link_to "Frequently Asked Questions", faq_path %></h3>
   <ul>
-    <li><a href="#">Why would I go?</a></li>
-    <li><a href="#">Who's going to be there?</a></li>
-    <li><a href="#">Why did I do this to myself?</a></li>
+    <li>Coming soon</li>
   </ul>						
   
   <h3>Contact Us</h3>
   <p>
     We'd love to hear from you!  Let us know your thoughts, questions, and concerns about the conference
-    <br/> <%= link_to "Contact us", root_path %> 
+    <br/> <%= link_to "Contact us", 'mailto: mkenned2@jhmi.edu'%> 
   </p>
   								
 </div>

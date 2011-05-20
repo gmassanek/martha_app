@@ -1,22 +1,22 @@
-<h3>Register Now</h3>
-<h3>(Website and registration under construction)</h3>
-<p>Fill out the registration below to secure your spot for the upcoming summit.  Please note, your spot will
-not be saved until payment has been received.</p>
-<hr>
-<div class="centered" id="registration_form">
-  <%= simple_form_for(@registration) do |f| %>
-      <%= f.input :name, :as => :string%>
-      <%= f.input :credentials, :as => :string %>
-      <%= f.input :email, :as => :string %>
-      <%= f.input :home_phone, :as => :string, :label => 'Phone #'  %>
-      <%= f.input :address_1, :as => :string %>
-      <%= f.input :address_2, :as => :string %>
-      <%= f.input :city, :as => :string %>
-      <%= f.input :state, :collection => states_array%>
-      <%= f.input :zip, :as => :string %>
-      <%= f.button :submit, 'Submit', :class=>'center' %>
-      <!-- institution, -->
-  <% end %>
+<div id="container">	
+  <div id="content">
+    <h2>Register Now</h2>
+    <p>Fill out the registration below to secure your spot for the upcoming summit.  Please note, your spot will
+    not be saved until payment has been received.</p>
+    <hr>
+    <div class="centered" id="registration_form">
+      <%= simple_form_for(@registration) do |f| %>
+          <%= f.error_messages %>
+          <%= f.input :name, :as => :string%>
+          <%= f.input :email, :as => :string %>
+          <%= f.input :home_phone, :as => :string, :label => 'Phone #'  %>
+          <%= f.input :address_1, :as => :string %>
+          <%= f.input :address_2, :as => :string %>
+          <%= f.input :city, :as => :string %>
+          <%= f.input :state, :collection => states_array%>
+          <%= f.input :zip, :as => :string %>
+          <%= f.button :submit, 'Submit', :class=>'center' %>
+      <% end %>
+    </div>
+  </div>
 </div>
-<div class="cleaner"></div>
-

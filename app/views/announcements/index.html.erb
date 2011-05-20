@@ -1,15 +1,13 @@
-
-<div>
-  <header>
-  <h3>Announcements</h3>
-  <% if !session[:user].nil? && session[:user].role == "admin" %>
-    <h5><%= link_to "Add Announcement", new_announcement_path %></h5>
-  <% end %>
-  <header>
-  <div class="announcements">
-    <% @announcements.each do |ann| %>
-      <%= render :partial => 'pages/announcement', :locals => {:ann => ann} %>
-    <% end %>
+<div id="container">	
+  <div id="content">
+      <h3>Announcements</h3>
+      <% if !session[:user].nil? && session[:user].role == "admin" %>
+        <h5><%= link_to "Add Announcement", new_announcement_path %></h5>
+      <% end %>
+      <div class="announcements">
+        <% @announcements.each do |ann| %>
+          <%= render :partial => 'pages/announcement', :locals => {:ann => ann} %>
+        <% end %>
+      </div>
   </div>
 </div>
-

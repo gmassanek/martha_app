@@ -3,16 +3,16 @@
     <ul>
 	    <li><%= link_to "Home", root_path %></li>
  	    <li><%= link_to "Planning Committee", planning_path %></li>
-	    <li><%= link_to "Conference Details", nil %>
+	    <li>Conference Details
         <ul>
-	        <li><a href="#">Sessions</a></li>
-	        <li><a href="#">Speakers</a></li>
-	        <li><a href="#">Mission</a></li>
-	        <li><a href="#">History</a></li>
+	        <li><%= link_to "Sessions", sessions_path %></li>
+	        <li><%= link_to "Speakers", speakers_path %></li>
+	        <li><%= link_to "Mission", mission_path %></li>
+	        <li><%= link_to "History", history_path %></li>
 	      </ul>
 	    </li>
 	    <li><%= link_to "Register", register_path %></li>
-	    <li><%= link_to "Hotel and Travel", info_path %></li>
+	    <li><%= link_to "Hotel and Travel", hotel_path %></li>
     </ul>
   </div>
 </div><!-- end of top nav -->

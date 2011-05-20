@@ -5,26 +5,23 @@ class RegistrationsController < ApplicationController
     @registration = Registration.new
     @title = "Sign Up"
   end
-
-  def edit
-  end
-
+  
   def index
-    #@registrations = Registration.all
     @registrations = Registration.find(:all, :order => :created_at)
   end
 
   def create
+    #puts "------------- trying to save a registration ------------"
     @registration = Registration.new(params[:registration])
     if @registration.save
-      puts "=========== successful registration"
+      #puts "=========== successful registration"
       # Handle a successful save.
-      #RegistrationMailer.welcome_email(@registration).deliver
+      RegistrationMailer.welcome_email(@registration).deliver
       #redirect_to registrations_success_path(@registration)
       render :action => 'show'
     else
+      puts "---- errors(#{@registration.errors.length}) -------"
       @title = "Sign up"
-
       render :action=>'new'
       #redirect_to register_path
       #redirect_to :action => 'new', :email =>@registration.email
@@ -38,8 +35,6 @@ class RegistrationsController < ApplicationController
 
   def confirm_payment
     registration = Registration.find(params[:id])
-    #registration.paid_date = Time.now
-    #if registration.save then
     if registration.update_attribute(:paid_date,Time.now) then
       flash[:message] = "#{registration.name}'s payment received."
       RegistrationMailer.payment_email(registration).deliver

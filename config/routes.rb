@@ -12,9 +12,16 @@ MarthaApp::Application.routes.draw do
   match '/logout', :to => 'users#logout'
   match '/home', :to => 'pages#home'
   match '/conference', :to => 'pages#conference'
-  match '/info', :to => 'pages#info'
+  match '/hotel', :to => 'pages#hotel'
   match 'downloads/light_rail_map', :to => 'downloads#light_rail_map'
   match '/planning', :to => 'pages#planning'
+  match '/hotel', :to => 'pages#hotel'
+  match '/sessions', :to => 'pages#sessions'
+  match '/speakers', :to => 'pages#speakers'
+  match '/mission', :to => 'pages#mission'
+  match '/history', :to => 'pages#history'
+  match '/faq', :to => 'pages#faq'
+  
   resources :subscriptions
 
   resources :announcements

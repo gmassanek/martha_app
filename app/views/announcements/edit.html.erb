@@ -1,25 +1,19 @@
-<h3>Add Announcement</h3>
-<h3>(Website and registration under construction)</h3>
-<p>Fill out the form below to add an announcement about the upcoming conference.</p>
-<hr>
-<div id="registration_form">
-  <%= form_for(@announcement) do |f| %>
-    <div class="field">
-      <%= f.label :title %>
-      <%= f.text_field :title, :class=>"required input_field" %>
+<div id="container">	
+  <div id="content">
+      <h3>Edit Announcement</h3>
+      <%= form_for(@announcement) do |f| %>
+        <div class="field">
+          <%= f.label :title %>
+          <%= f.text_field :title, :class=>"required input_field" %>
+        </div>
+        <div class="field">
+          <%= f.label :text %>
+          <%= f.text_area :text, :size => 30, :class=>"required input_field" %>
+        </div>
+        <div class="actions">
+          <%= f.submit "Save" %>
+        </div>
+      <% end %>
     </div>
-    <div class="field">
-      <%= f.label :memo %>
-      <%= f.text_field :memo, :class=>"input_field" %>
-    </div>
-    <div class="field">
-      <%= f.label :text %>
-      <%= f.text_area :text, :size => 30, :class=>"required input_field" %>
-    </div>
-    <div class="actions">
-      <%= f.submit "Sign up" %>
-    </div>
-  <% end %>
+  </div>
 </div>
-<div class="cleaner"></div>
-

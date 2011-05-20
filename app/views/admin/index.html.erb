@@ -1,27 +1,8 @@
-<h1>Admin Home</h1>
-
-<div class="post_content">
-  <div class="left">
-    <h3>View/Update Registrations</h3>
-    <p>
-      View current registrants and update registration payment information.
-    </p>
-    <div class="button float_l"><%= link_to "Go", registrations_path %></div>
-  </div>
-  <div class="right">
-    <h3>View/Update Users</h3>
-    <p>
-      View all and update users.
-    </p>
-    <div class="button float_l"><%= link_to "Go", users_path %></div>
-  </div>
-  <div class="right">
-    <h3>Announcements</h3>
-    <p>
-      View all and update users.
-    </p>
-    <div class="button float_l"><%= link_to "Go", announcements_path %></div>
+<div id="container">	
+  <div id="content">
+    <h2>Admin Home</h2>
+    <h3> <%= link_to "Registrations", registrations_path %> </h3>
+    <h3><%= link_to "Announcements", announcements_path %></h3>
+    <!--<h3>#<%= link_to "Users", users_path %></h3>-->
   </div>
 </div>
-<div class="cleaner"></div>
-

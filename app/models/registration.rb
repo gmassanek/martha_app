@@ -29,7 +29,7 @@
 class Registration < ActiveRecord::Base
   email_regex = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   
-  attr_accessible :name, :email, :home_phone, :cell_phone, :address_1, :address_2, :city, :state, :zip, :credentials, :paid_date
+  attr_accessible :name, :email, :home_phone, :address_1, :address_2, :city, :state, :zip, :credentials, :paid_date
 
 #this code sanitizes the phone number so that it is only digits before it is saved
 before_validation(:on => :create) do
@@ -40,18 +40,14 @@ end
   validates :name,
       :presence => true,
       :length => { :within => 4..40 }
-
-  validates :last_name,
-      :presence => true,
-      :length => { :within => 4..40 }
   
   validates :email,
       :presence => true,
-      :format => {:with => email_regex}
+      :format => {:with => email_regex},
+      :uniqueness => true
 
 
   validates :home_phone, :presence => true, :length => { :is => 10 }
-  validates :cell_phone, :presence => true, :length => { :is => 10 }
   validates :address_1, :presence => true
   validates :city, :presence => true
   validates :state, :presence => true
