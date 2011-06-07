@@ -1,5 +1,6 @@
 MarthaApp::Application.routes.draw do
 
+
   get "users/reset_password"
   get "admin/index"
   get "admin/registrations"
@@ -21,9 +22,10 @@ MarthaApp::Application.routes.draw do
   match '/mission', :to => 'pages#mission'
   match '/history', :to => 'pages#history'
   match '/faq', :to => 'pages#faq'
+  match '/contact', :to => 'contacts#new'
   
   resources :subscriptions
-
+  resources :contacts
   resources :announcements
   resources :registrations
   resources :users

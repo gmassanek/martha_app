@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <p>
+      <%= @contact.name %> submitted a comment.
+    </p>
+    <p>
+      Reply to <%= @contact.name %> directly at <%=@contact.email %> 
+    </p>
+    <p>
+      <%= @contact.name %>'s comment:
+      <br/>
+      <%= @contact.message %>
+    </p>
+  </body>
+</html>
+
