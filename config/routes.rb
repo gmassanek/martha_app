@@ -21,7 +21,7 @@ MarthaApp::Application.routes.draw do
   match '/history', :to => 'pages#history'
   match '/faq', :to => 'pages#faq'
   match '/contact', :to => 'contacts#new'
-  match '/questionaire', :to => 'questionaires#new' 
+  match '/survey', :to => 'questionaires#new' 
   resources :subscriptions
   resources :contacts
   resources :announcements
