@@ -1,7 +1,4 @@
 MarthaApp::Application.routes.draw do
-
-
-
   get "users/reset_password"
   get "admin/index"
   get "admin/registrations"
