@@ -353,3 +353,13 @@ width:7em;
 .input {
     padding: 3px;
 }
+
+.inputs textarea {
+  display: inline;
+height: 125px;
+width: 100%;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.questionaire label.text {
+width: 100%;
+}

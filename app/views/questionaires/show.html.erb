@@ -1,0 +1,52 @@
+<div id="container">
+  <div id="content">
+    <p id="notice"><%= notice %></p>
+
+    <p>
+      <b>Name:</b>
+      <%= @questionaire.name %>
+    </p>
+
+    <p>
+      <b>Email:</b>
+      <%= @questionaire.email %>
+    </p>
+
+    <p>
+      <b>What is your practice setting and role?:</b>
+      <br/>
+      <%= @questionaire.q1 %>
+    </p>
+
+    <p>
+      <b>What do you consider the biggest challenges in your current practice setting?:</b>
+      <br/>
+      <%= @questionaire.q2 %>
+    </p>
+
+    <p>
+      <b>Do you have any staff reporting to you?:</b>
+      <br/>
+      <%= @questionaire.q3 %>
+    </p>
+
+    <p>
+      <b>Are you billing for your services?:</b>
+      <br/>
+      <%= @questionaire.q4 %>
+    </p>
+
+    <p>
+      <b>What do you hope to gain from attending this conference?:</b>
+      <br/>
+      <%= @questionaire.q5 %>
+    </p>
+
+    <p>
+      <b>Are you willing to have your name and contact info available to other attendees?:</b>
+      <br/>
+      <%= @questionaire.q6 %>
+    </p>
+
+  </div>
+</div>

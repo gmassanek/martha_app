@@ -1,0 +1,41 @@
+<div id="container">
+  <div id="content">
+    <h1>Listing questionaires</h1>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+        <th>Q5</th>
+        <th>Q6</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+
+    <% @questionaires.each do |questionaire| %>
+      <tr>
+        <td><%= questionaire.name %></td>
+        <td><%= questionaire.email %></td>
+        <td><%= questionaire.q1 %></td>
+        <td><%= questionaire.q2 %></td>
+        <td><%= questionaire.q3 %></td>
+        <td><%= questionaire.q4 %></td>
+        <td><%= questionaire.q5 %></td>
+        <td><%= questionaire.q6 %></td>
+        <td><%= link_to 'Show', questionaire %></td>
+        <td><%= link_to 'Edit', edit_questionaire_path(questionaire) %></td>
+        <td><%= link_to 'Destroy', questionaire, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+    </table>
+
+    <br />
+
+    <%= link_to 'New Questionaire', new_questionaire_path %>
+  </div>
+</div>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110607011907) do
+ActiveRecord::Schema.define(:version => 20110608014121) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title"
@@ -25,6 +25,22 @@ ActiveRecord::Schema.define(:version => 20110607011907) do
     t.string   "name"
     t.string   "email"
     t.text     "message"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "questionaires", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "q1"
+    t.text     "q2"
+    t.text     "q3"
+    t.text     "q4"
+    t.text     "q5"
+    t.text     "q6"
+    t.text     "q7"
+    t.text     "q8"
+    t.text     "q9"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
