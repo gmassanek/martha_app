@@ -7,7 +7,7 @@ class Questionaire < ActiveRecord::Base
       :length => { :within => 4..40 }
   
   validates :email,
-      :format => {:with => email_regex}
+      :format => {:with => email_regex}, :if => :email?
 
 end
 
