@@ -22,6 +22,7 @@ MarthaApp::Application.routes.draw do
   match '/faq', :to => 'pages#faq'
   match '/contact', :to => 'contacts#new'
   match '/survey', :to => 'questionaires#new' 
+  match '/baltimore', :to => 'pages#baltimore'
   resources :subscriptions
   resources :contacts
   resources :announcements
