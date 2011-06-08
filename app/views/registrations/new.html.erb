@@ -1,8 +1,6 @@
-<div id="container">	
-  <div id="content">
-    <h2>Register Now</h2>
-    <p>Fill out the registration below to secure your spot for the upcoming summit.  Please note, your spot will
+<div id="container">	<div id="content"> <h2>Register Now</h2> <p>Fill out the registration below to secure your spot for the upcoming summit.  Please note, your spot will
     not be saved until payment has been received.</p>
+    <p>There is a $110 per person attendance fee for the 2011 conference.  Payments should be made via check once the following registration form has been submitted. Find payment details below as well as in your registration confirmation email.</p>
     <hr>
     <div class="centered" id="registration_form">
       <%= simple_form_for(@registration) do |f| %>
@@ -18,5 +16,25 @@
           <%= f.button :submit, 'Submit', :class=>'center' %>
       <% end %>
     </div>
+    <br/>
+    <hr/>
+    <p>Make checks payable to:</p>
+    <p>
+      <b>
+        University of Maryland Baltimore Foundation
+      </b>
+      (memo: Acute Care Summit)
+      
+    </p>
+    <p>Mails checks to: </p>
+    <p>
+      <b>
+        Ms Peggy Hood<br/>
+        Johns Hopkins Hospital<br/>
+        600 North Wolfe Street<br/>
+        Halsted 601<br/>
+        Baltimore, Maryland 21287
+      </b>
+    </p>
   </div>
 </div>

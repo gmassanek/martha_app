@@ -223,8 +223,8 @@ padding: 15px 0 0 0;
 width: 600px;
 margin-bottom: 36px;
 color: #444;
-font-size: 16px;
-line-height: 24px;
+font-size: 14px;
+line-height: 20px;
 padding-right: 10px;
 }
 
@@ -323,10 +323,18 @@ clear:both;
 }
 
 #footer-area {
-border-top: 4px solid #ddd;
-margin-top: -4px;
-padding: 18px 0;
+border-top: 1px solid #ddd;
+margin-top: 5px;
+padding: 10px 0;
 overflow: hidden;
+}
+
+#footer-area ul {
+  text-align: center;
+}
+
+#footer-area li {
+display: inline;
 }
 
 hr {

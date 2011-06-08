@@ -4,16 +4,12 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
-    <h1><%= @registration.name %>,</h1>
-    <p>
-      Welcome to the Acute Care Leadership Summit
-    </p>
-    <p>
-      You have successfully signed up to for the 2011 Acute Care Leadership Summit in Baltimore, MD.
-    </p>
-    <p>Please send your registration fee in as soon as possible to ensure your spot.</p>
-    <p>Thanks!</p>
-    <p>The Acute Care Leadership Summit team</p>
+    <p>Dear <%= @registration.name %>,</p>
+    <p>Thank you for registering for the 2011 Acute Care Leadership Summit.  We look forward to seeing and working with you in Baltimore.  To complete your registration, please send payment of $110.00 by check or money order, made payable to University of Maryland Baltimore Foundation, Inc, with note of Acute Care Leadership Summit in the memo section. We will send you a confirmation of receipt of payment when it is received.  You may follow the link on the website to the Hilton Hotel for discounted hotel rates.</p>
 
+    <p>Conference Planning Committee
+    <br/>
+    <%= link_to "phood2@jhmi.edu", "mailto:phood2@jhmi.edu" %>
+    </p>
   </body>
 </html>
