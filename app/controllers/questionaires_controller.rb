@@ -47,6 +47,7 @@ class QuestionairesController < ApplicationController
       if @questionaire.save
         flash[:notice] = "Thanks for participating in our survey."
         format.html { 
+          ContactMailer.questionaire_completed(@questionaire).deliver
           render :action => "show"
         }
         format.xml  { render :xml => @questionaire, :status => :created, :location => @questionaire }
