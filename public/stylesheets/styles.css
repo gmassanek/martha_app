@@ -365,23 +365,20 @@ width: 100%;
 }
 .schedule ul li {
 list-style: none;
-margin-left: 1em; 
-padding-left: 1em;
-font-size: 90%;
+margin-left: 2em; 
+padding-left: 2em;
 }
 .schedule ul li ul li{
 list-style: none;
-margin-left: 1em; 
-padding-left: 1em;
-font-size: 90%;
+margin-left: 2em; 
+padding-left: 2em;
 }
 .schedule label{
   float: left;
-  width: 7em;
+  width: 10em;
 }
 .schedule ul li ul li ul li{
 list-style: none;
-margin-left: 5em; 
-padding-left: 5em;
-font-size: 90%;
+margin-left: 14em; 
+padding-left: 0em;
 }
