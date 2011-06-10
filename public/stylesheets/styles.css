@@ -363,3 +363,25 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
 .questionaire label.text {
 width: 100%;
 }
+.schedule ul li {
+list-style: none;
+margin-left: 1em; 
+padding-left: 1em;
+font-size: 90%;
+}
+.schedule ul li ul li{
+list-style: none;
+margin-left: 1em; 
+padding-left: 1em;
+font-size: 90%;
+}
+.schedule label{
+  float: left;
+  width: 7em;
+}
+.schedule ul li ul li ul li{
+list-style: none;
+margin-left: 5em; 
+padding-left: 5em;
+font-size: 90%;
+}
