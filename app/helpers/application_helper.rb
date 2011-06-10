@@ -24,6 +24,11 @@ module ApplicationHelper
       content_tag(:li, lnk)
     end
   end
+  def load_javascript
+    if Rails.env.production?
+      javascript_include_tag "ganalytics.js"
+    end
+  end
 end
 
 
