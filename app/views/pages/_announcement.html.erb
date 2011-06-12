@@ -3,6 +3,7 @@
   <div style="display:inline"> - <%= ann.updated_at.strftime("%m/%d/%Y")%></div>
   <% if !session[:user].nil? && session[:user].role == "admin" %>
     <%= link_to "Edit", edit_announcement_path(ann.id) %>
+    <%= link_to "Delete", :controller => 'announcements', :action => 'destroy', :id => ann.id, :confirm => 'Are you sure?', :method => 'delete' %>
   <% end %>
   <%= raw ann.text %>
 </div>

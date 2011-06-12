@@ -40,5 +40,14 @@ class AnnouncementsController < ApplicationController
   def show
   end
 
+  def destroy
+    @announcement = Announcement.find(params[:id])
+    @announcement.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(announcements_url) }
+      format.xml  { head :ok }
+    end
+  end
 end
 
