@@ -365,8 +365,8 @@ width: 100%;
 }
 .schedule ul li {
 list-style: none;
-margin-left: 2em; 
-padding-left: 2em;
+margin-left: 0em; 
+padding-left: 0em;
 }
 .schedule ul li ul li{
 list-style: none;
@@ -379,6 +379,6 @@ padding-left: 2em;
 }
 .schedule ul li ul li ul li{
 list-style: none;
-margin-left: 14em; 
+margin-left: 13em; 
 padding-left: 0em;
 }
