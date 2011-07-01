@@ -10,6 +10,6 @@
     Address 2: <%= @registration.address_2 %></br>
     City, State: <%= @registration.city + ", " + @registration.state%></br>
     Zip: <%= @registration.zip %></br>
-  
+    Received: <%= reg.create_at.strftime '%m/%d/%Y' %> <br/>
   </div>
 </div>
