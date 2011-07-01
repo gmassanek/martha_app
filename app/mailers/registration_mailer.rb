@@ -3,7 +3,7 @@ class RegistrationMailer < ActionMailer::Base
   sendgrid_category :use_subject_lines
   sendgrid_enable   :ganalytics, :opentracking
   default :from => "Acute Care Leadership Summit<registration@acutecareleadershipsummit.com>"
-  default :bcc => ["phood2@jhmi.edu", "mkenned2@jhmi.edu", "gmassanek@gmail.com"]
+  default :bcc => ["phood2@jhmi.edu", "mkenned2@jhmi.edu"}
 
   def welcome_email(registration)
     sendgrid_category "Welcome"
