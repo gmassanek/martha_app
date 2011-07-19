@@ -365,8 +365,9 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
 .questionaire label.text {
 width: 100%;
 }
-.schedule .header{
+.schedule .tableHeader{
   font-weight: bolder;
+  padding-top: 10px;
 }
 .schedule tr{
   vertical-align: top;
