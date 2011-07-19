@@ -365,10 +365,11 @@ font-family: Verdana, Arial, Helvetica, sans-serif;
 .questionaire label.text {
 width: 100%;
 }
-.schedule ul li {
-list-style: none;
-margin-left: 0em; 
-padding-left: 0em;
+.schedule .header{
+  font-weight: bolder;
+}
+.schedule tr{
+  vertical-align: top;
 }
 .schedule ul li ul li{
 list-style: none;
