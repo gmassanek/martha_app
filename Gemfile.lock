@@ -29,7 +29,6 @@ GEM
       activemodel (= 3.0.3)
       activesupport (= 3.0.3)
     activesupport (3.0.3)
-    annotate-models (1.0.4)
     arel (2.0.8)
     builder (2.1.2)
     capybara (0.4.1.2)
@@ -132,7 +131,6 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth
-  annotate-models (= 1.0.4)
   capybara
   cucumber
   cucumber-rails

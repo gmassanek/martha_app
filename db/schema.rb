@@ -62,13 +62,6 @@ ActiveRecord::Schema.define(:version => 20110608014121) do
     t.string   "last_name"
   end
 
-  create_table "subscriptions", :force => true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", :force => true do |t|
     t.string   "name"
     t.text     "salt"
