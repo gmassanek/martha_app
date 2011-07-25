@@ -5,8 +5,13 @@
   </head>
   <body>
     <p>Dear <%= @registration.name %>,</p> 
-    <p>We are in receipt of your payment for the 2011 Acute Care NP/PA Leadership Summit.  Please visit the website for updates regarding the program and other activities.</p>
-    <p>Conference Planning Committee.</p>
+    <p>We are in receipt of your payment for the 2011 Acute Care NP/PA Leadership Summit. Please visit the website for updates regarding the program and other activities, including participant surveys.   If you have any questions, please contact us at any time. </p>
+    <p>We look forward to seeing you in Baltimore.</p>
+    <p>
+      The Conference Planning Committee<br/>
+      Peggy Hood<br/>
+      <%= mail_to 'phood2@jhmi.edu' %>
+    </p>
   </body>
 </html>
 

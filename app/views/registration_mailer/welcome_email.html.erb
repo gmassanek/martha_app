@@ -5,11 +5,12 @@
   </head>
   <body>
     <p>Dear <%= @registration.name %>,</p>
-    <p>Thank you for registering for the 2011 Acute Care NP/PA Leadership Summit.  We look forward to seeing and working with you in Baltimore.  To complete your registration, please send payment of $110.00 by check or money order, made payable to University of Maryland Baltimore Foundation, Inc, with note of Acute Care NP/PA Leadership Summit in the memo section. We will send you a confirmation of receipt of payment when it is received.  You may follow the link on the website to the Hilton Hotel for discounted hotel rates.</p>
-
-    <p>Conference Planning Committee
-    <br/>
-    <%= link_to "phood2@jhmi.edu", "mailto:phood2@jhmi.edu" %>
+    <p>Thank you for registering for the 2011 Acute Care NP/PA Leadership Summit. We look forward to seeing and working with you in Baltimore. To complete your registration, please send a check or money order for $110.00 by August 30th  2011, payable to “University of Maryland Baltimore Foundation, Inc” - note “Acute Care NP/PA Leadership Summit” in the memo section.</p>
+    <p>We will send you a confirmation of receipt of payment when it is received.  Please follow the link on the website to the Baltimore Hilton Hotel for discounted hotel rates.</p>
+    <p>
+      The Conference Planning Committee<br/>
+      Peggy Hood<br/>
+      <%= mail_to 'phood2@jhmi.edu' %>
     </p>
   </body>
 </html>
