@@ -79,6 +79,11 @@ a {
 color:#6B4A28;
 }
 
+.fake_h3_link {
+color:#6B4A28;
+text-decoration:underline;
+}
+
 a:hover {
 color: #372417;
 }
