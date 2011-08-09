@@ -13,15 +13,17 @@
           <tr>
             <td><b>Name<b></td>
             <td><b>Email</b></td>
-            <td><b>Phone</b></td>
+            <td><b>Credentials</b></td>
             <td><b>Payment</b></td>
             <td><b>Date Registered</b></td>
           </tr>
           <% @registrations.each do |reg| %>
             <tr>
-              <td height = "50"><%= reg.name %></td>
+              <td height = "50">
+                <%= link_to reg.name, registration_path(reg) %>
+              </td>
               <td><%= reg.email %>      </td>
-              <td><%= reg.home_phone %> </td>
+              <td><%= reg.credentials %> </td>
               <!--
               <td>Address 1: <%= reg.address_1 %></td>
               <td>Address 2: <%= reg.address_2 %></td>
