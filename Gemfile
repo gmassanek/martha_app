@@ -6,19 +6,14 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'pg'
 #gem 'annotate-models'#, '1.0.4'
+gem 'pg'
 gem 'factory_girl_rails', '1.0'
 gem 'sendgrid'
 gem 'jrails'
 gem 'simple_form'
 gem 'RedCloth'
 
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
 gem "rspec"
 gem 'database_cleaner'
 gem 'cucumber-rails'
