@@ -2,31 +2,25 @@
   <div id="content">
     <h1>Listing questionaires</h1>
 
-    <table>
+    <table cellspacing="3px">
       <tr>
+        <th></th>
         <th>Name</th>
         <th>Email</th>
-        <th>Q1</th>
-        <th>Q2</th>
-        <th>Q3</th>
-        <th>Q4</th>
-        <th>Q5</th>
-        <th>Q6</th>
+        <th>Created</th>
         <th></th>
         <th></th>
         <th></th>
       </tr>
 
-    <% @questionaires.each do |questionaire| %>
+    <% @questionaires.each_with_index do |questionaire, index| %>
       <tr>
+        <td height="25"><%= index+1 %></td>
         <td><%= questionaire.name %></td>
         <td><%= questionaire.email %></td>
-        <td><%= questionaire.q1 %></td>
-        <td><%= questionaire.q2 %></td>
-        <td><%= questionaire.q3 %></td>
-        <td><%= questionaire.q4 %></td>
-        <td><%= questionaire.q5 %></td>
-        <td><%= questionaire.q6 %></td>
+        <td>
+            <%= questionaire.created_at.strftime '%m/%d/%Y' %> <br/>
+        </td>
         <td><%= link_to 'Show', questionaire %></td>
         <td><%= link_to 'Edit', edit_questionaire_path(questionaire) %></td>
         <td><%= link_to 'Destroy', questionaire, :confirm => 'Are you sure?', :method => :delete %></td>

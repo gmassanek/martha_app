@@ -1,5 +1,8 @@
 /* Created by http://freehtml5templates.com */
 /* reset */
+td {
+  align: left;
+}
 * {
 margin: 0;
 padding: 0;
