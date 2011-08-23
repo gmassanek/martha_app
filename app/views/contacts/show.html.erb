@@ -18,3 +18,8 @@
     </p>
   </div>
 </div>
+<% if !session[:user].nil? && session[:user].role == "admin" %>
+  <%= render 'admin/side' %> 
+<% else %>
+  <%= render 'layouts/side' %> 
+<% end %>

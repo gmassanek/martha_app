@@ -31,7 +31,7 @@ class RegistrationsController < ApplicationController
   def destroy
     @registration = Registration.find(params[:id])
     @registration.destroy
-    redirect_to registrations_path, :message => "#{@registration.name}'s payment could not be updated because the registration is invalid."
+    redirect_to registrations_path, :notice => "#{@registration.name}'s registration deleted"
   end
 
   def show
