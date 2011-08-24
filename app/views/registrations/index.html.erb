@@ -28,7 +28,7 @@
               <td>
                 <% if reg.paid_date.nil? then %>
                     <% puts reg.id %>
-                    <%= link_to "Mark as Paid", :action => "confirm_payment", :id => reg %>
+                    <%= link_to "Mark as Paid", :confim => "Are you sure?", :action => "confirm_payment", :id => reg %>
                 <% else %>
                   <%= reg.paid_date.strftime '%m/%d/%Y' %> <br/>
                 <% end %>
