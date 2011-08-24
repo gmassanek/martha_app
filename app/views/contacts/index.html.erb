@@ -7,21 +7,19 @@
         <th></th>
         <th>Name</th>
         <th>Email</th>
-        <th>Message</th>
         <th>Created</th>
         <th></th>
         <th></th>
         <th></th>
       </tr>
 
-    <% @contacts.each do |contact| %>
+    <% @contacts.each_with_index do |contact, index| %>
       <tr align="left">
         <td><%= index+1 %></td>
         <td><%= contact.name %></td>
         <td><%= contact.email %></td>
-        <td><%= contact.message %></td>
         <td>
-            <%= reg.created_at.strftime '%m/%d/%Y' %> <br/>
+            <%= contact.created_at.strftime '%m/%d/%Y' %> <br/>
         </td>
         <td><%= link_to 'Show', :controller => "contacts", :action => "show", :id => contact.id %></td>
         <td><%= link_to 'Edit', edit_contact_path(contact) %></td>
