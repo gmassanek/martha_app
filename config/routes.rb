@@ -5,6 +5,12 @@ MarthaApp::Application.routes.draw do
   get "admin/confirm_payment"
   get "registrations/confirm_payment"
 
+  get "materials/index"
+  get "materials/martha"
+  match '/materials', :to => 'materials#index'
+  match '/materials_login', :to => 'users#materials_login'
+  match '/materials_logout', :to => 'users#materials_logout'
+
   match '/register', :to => 'registrations#new'
   match '/admin', :to => 'admin#index'
   match '/login', :to => 'users#login'

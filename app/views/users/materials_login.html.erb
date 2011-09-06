@@ -1,0 +1,17 @@
+<h3>Materials Login</h3>
+
+<% flash.each do |key, value| %>
+  <div  id="error_explanation">
+    <ul>
+      <li><%= value %></li>
+    </ul>
+  </div>
+<% end %>
+
+
+<%= form_tag :action => "materials_login" do %>
+  <%= label_tag(:password, "Password: ") %>
+  <%= password_field_tag(:password) %>
+  <br/>
+  <%= submit_tag("Login") %>
+<% end %>

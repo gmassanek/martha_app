@@ -1,6 +1,15 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
+  def materials_login_required
+    if session[:materials_user]
+      return true
+    end
+    flash[:warning]='Please login to continue'
+    session[:return_to]=request.request_uri
+    redirect_to :controller => "users", :action => "materials_login"
+    return false
+  end
 
   def login_required
     if session[:user]
