@@ -1,7 +1,38 @@
 <div id="container">	
   <div id="content">
     <h2>2011 Lecture Materials</h2>
-    <h3> <%= link_to "Martha Kennedy", materials_martha_path %> </h3>
+    <b>Friday September 9th</b>
+    <ul>
+      <li>
+        <%= link_to "Session 1", materials_session1_path %>
+      </li>
+      <li>
+        <%= link_to "Session 2", materials_session2_path %>
+      </li>
+      <li>
+        <%= link_to "Session 3", materials_session3_path %>
+      </li>
+      <li>
+        <%= link_to "Session 4", materials_session4_path %>
+      </li>
+      <li>
+        <%= link_to "Session 5", materials_session5_path %>
+      </li>
+    </ul>
+    <b>Saturday September 10th</b>
+    <ul>
+      <li>
+        <%= link_to "Session 6", materials_session6_path %>
+      </li>
+      <li>
+        <%= link_to "Session 7", materials_session7_path %>
+      </li>
+    </ul>
+    <p>
+      * right click and select "Save Link As" to download materials
+      <br/>
+      <%= link_to "Logout", materials_logout_path %>
+    </p>
   </div>
 </div>
 <%= render 'layouts/side' %>

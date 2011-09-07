@@ -6,7 +6,14 @@ MarthaApp::Application.routes.draw do
   get "registrations/confirm_payment"
 
   get "materials/index"
-  get "materials/martha"
+  get "materials/session1"
+  get "materials/session2"
+  get "materials/session3"
+  get "materials/session4"
+  get "materials/session5"
+  get "materials/session6"
+  get "materials/session7"
+
   match '/materials', :to => 'materials#index'
   match '/materials_login', :to => 'users#materials_login'
   match '/materials_logout', :to => 'users#materials_logout'
