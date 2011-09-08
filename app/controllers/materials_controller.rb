@@ -9,8 +9,12 @@ class MaterialsController < ApplicationController
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session1_DeanAllen.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
   
-  def session2
-    send_file("#{RAILS_ROOT}/public/lecture_materials/2011_Acute_Care_NPPA_conference_brochure.pdf", :type => 'application/pdf', :disposition => 'inline')
+  def session2a
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session2.1Entry_To_Practice.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+
+  def session2b
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session2.2_Entry_to_Practice.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
 
   def session3

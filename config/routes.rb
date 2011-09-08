@@ -7,7 +7,8 @@ MarthaApp::Application.routes.draw do
 
   get "materials/index"
   get "materials/session1"
-  get "materials/session2"
+  get "materials/session2a"
+  get "materials/session2b"
   get "materials/session3"
   get "materials/session4"
   get "materials/session5"
