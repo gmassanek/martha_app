@@ -11,7 +11,8 @@ MarthaApp::Application.routes.draw do
   get "materials/session3"
   get "materials/session4"
   get "materials/session5"
-  get "materials/session6"
+  get "materials/session6a"
+  get "materials/session6b"
   get "materials/session7"
 
   match '/materials', :to => 'materials#index'
