@@ -37,6 +37,14 @@ class MaterialsController < ApplicationController
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session6_BillingModels_Munro.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
   
+  def session6c
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session6_Billing_C.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
+  def session6d
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session6_Billing_D.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
   def session7
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session7_Outcomes.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
