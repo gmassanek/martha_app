@@ -21,10 +21,38 @@ class MaterialsController < ApplicationController
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
   
+  def session3b
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations_B.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
+  def session3c
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations_C.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
+  def session3d
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations_D.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
+  def session3e
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations_E.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
+  def session3f
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session3_DifficultConversations_F.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+  
   def session4
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session4_PANPTeamModels.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
   
+  def session4b
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session4_B.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+
+  def session4c
+    send_file("#{RAILS_ROOT}/public/lecture_materials/Session4_C.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+
   def session5
     send_file("#{RAILS_ROOT}/public/lecture_materials/Session5_ProfessionalAdvancementModels.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
