@@ -177,13 +177,13 @@ margin: 0;
 .nav .menu li {
 float: left;
 position: relative;
+padding: 0 10px;
 }
 
 .nav .menu a {
 display: block;
 text-decoration: none;
 color: #E3B88F;
-padding: 0 10px;
 line-height: 30px;
 }
 
