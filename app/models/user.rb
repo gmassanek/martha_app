@@ -1,17 +1,3 @@
-# == Schema Information
-# Schema version: 20110218001813
-#
-# Table name: users
-#
-#  id                 :integer         not null, primary key
-#  name               :string(255)
-#  salt               :text
-#  created_at         :datetime
-#  updated_at         :datetime
-#  encrypted_password :string(255)
-#  role               :string(255)
-#
-
 class User < ActiveRecord::Base
 
   validates :password,  :presence => true,
