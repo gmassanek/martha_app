@@ -15,10 +15,9 @@ class User < ActiveRecord::Base
                     :uniqueness => {:case_sensitive => false}
   validate :valid_role
 
-
   attr_accessor :password
   attr_protected :id, :salt
-  attr_accessible :name, :password, :password_confirmation, :role
+  attr_accessible :name, :password, :password_confirmation, :role, :password_reset
 
   before_save :save_encrypt_password
 

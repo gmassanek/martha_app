@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120510124254) do
+ActiveRecord::Schema.define(:version => 20120510131839) do
 
   create_table "announcements", :force => true do |t|
     t.string   "title"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(:version => 20120510124254) do
     t.datetime "updated_at"
     t.string   "encrypted_password"
     t.string   "role"
+    t.boolean  "password_reset",     :default => true
   end
 
 end

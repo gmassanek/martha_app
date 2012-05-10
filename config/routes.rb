@@ -54,6 +54,8 @@ MarthaApp::Application.routes.draw do
   resources :announcements
   resources :registrations
   resources :users
+  get '/password_reset', :to => 'users#password_reset'
+  post '/password_update', :to => 'users#password_update'
   resources :questionaires
   # The priority is based upon order of creation:
   # first created -> highest priority.
