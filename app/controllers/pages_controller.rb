@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   def home
     @title = "Home"
-    @announcements = Announcement.find(:all, :order => 'updated_at DESC')
+    @announcements = Announcement.find(:all, :order => 'updated_at DESC', :conditions => {:year => '2012'})
   end
 
   def conference

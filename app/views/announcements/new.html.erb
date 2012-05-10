@@ -2,6 +2,7 @@
   <div id="content">
       <h3>New Announcement</h3>
       <%= form_for(@announcement) do |f| %>
+        <%= f.hidden_field :year, :value => 2012 %>
         <div class="field">
           <%= f.label :title %>
           <%= f.text_field :title, :class=>"required input_field" %>

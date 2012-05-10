@@ -14,7 +14,7 @@
 
 class Announcement < ActiveRecord::Base
 
-  attr_accessible :title, :memo, :text, :user_id
+  attr_accessible :title, :memo, :text, :user_id, :year
   validates :title, :presence => true
   validates :text, :presence => true
   acts_as_textiled :text
