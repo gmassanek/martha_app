@@ -36,7 +36,7 @@ class PagesController < ApplicationController
     @title = "FAQ"
   end
   def flier
-    send_file("#{RAILS_ROOT}/public/2011_Acute_Care_NPPA_conference_brochure.pdf", :type => 'application/pdf', :disposition => 'inline')
+    send_file("#{RAILS_ROOT}/public/2012_nyp_flyer.pdf", :type => 'application/pdf', :disposition => 'inline')
     #send_file("#{RAILS_ROOT}/public/acuteCareLeadershipSummit.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
 end
