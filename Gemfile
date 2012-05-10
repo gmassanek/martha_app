@@ -10,6 +10,7 @@ gem 'sendgrid'
 gem 'jrails'
 gem 'simple_form'
 gem 'RedCloth'
+gem 'haml'
 
 group :development, :test do
   gem 'factory_girl_rails', '1.0'

@@ -64,6 +64,7 @@ GEM
       rake (>= 0.8.7)
     gherkin (2.1.5)
       trollop (~> 1.16.2)
+    haml (3.1.5)
     i18n (0.5.0)
     jrails (0.6.0)
     json_pure (1.4.6)
@@ -136,6 +137,7 @@ DEPENDENCIES
   cucumber-rails
   database_cleaner
   factory_girl_rails (= 1.0)
+  haml
   jrails
   nokogiri
   pg
