@@ -16,7 +16,7 @@ class AnnouncementsController < ApplicationController
   end
 
   def index
-    @announcements = Announcement.find(:all, :order => 'updated_at DESC')
+    @announcements = Announcement.find(:all, :order => 'updated_at DESC', :conditions => {:year => '2012'})
   end
 
   def create
