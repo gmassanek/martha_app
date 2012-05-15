@@ -1,7 +1,7 @@
 class ContactsController < ApplicationController
   before_filter :login_required, :only => [:show, :update, :edit, :destroy]
   def index
-    @contacts = Contact.all
+    @contacts = Contact.find(:all, :conditions => {:year => '2012'})
 
     respond_to do |format|
       format.html # index.html.erb

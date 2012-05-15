@@ -1,6 +1,7 @@
 <%= simple_form_for(@contact) do |f| %>
   <%= f.error_notification %>
 
+  <%= f.hidden_field :year, :value => 2012 %>
   <div class="inputs">
     <%= f.input :name %>
     <%= f.input :email %>
