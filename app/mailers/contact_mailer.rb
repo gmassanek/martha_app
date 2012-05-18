@@ -3,7 +3,7 @@ class ContactMailer < ActionMailer::Base
   sendgrid_category :use_subject_lines
   sendgrid_enable   :ganalytics, :opentracking
   default :from => "Acute Care Leadership<contact@acutecareleadershipsummit.com>"
-  default :to => 'mkenned2@jhmi.edu'
+  default :to => 'gmassanek@gmail.com'
 
   def message_from_user(contact)
     sendgrid_category "Acute Care Leadership Summit - User Comment"
