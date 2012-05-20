@@ -399,3 +399,13 @@ list-style: none;
 margin-left: 13em; 
 padding-left: 0em;
 }
+.time_ago_announcement {
+ display:inline;
+ float: right;
+ font-size: 10px;
+ line-height: 20px;
+ color:#372417;
+}
+.announcement p {
+  margin-bottom: 10px !important;
+}
