@@ -116,16 +116,15 @@ margin-right: auto;
 }
 
 .header .centerImages {
-margin-left: auto;
-margin-right: auto;
-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 870px;
 }
 
 .header img {
   border: 10px solid #372417;
-  margin: 10px 5px;
-  width: 250px;
-  height: 220px;
+  margin: 10px 0;
+  width: 850px;
 }
 
 .header h1 {
