@@ -8,6 +8,11 @@ class PagesController < ApplicationController
     @title = "Conference Information"
   end
 
+  def program
+    @title = "Program Information"
+    send_file("#{RAILS_ROOT}/public/2012_brochure.pdf", :type => 'application/pdf', :disposition => 'inline')
+  end
+
   def hotel
     @title = "Hotel and Travel Informaton"
   end
@@ -35,9 +40,10 @@ class PagesController < ApplicationController
   def faq
     @title = "FAQ"
   end
+
   def flier
+    @title = "Flier'
     send_file("#{RAILS_ROOT}/public/2012_nyp_flyer.pdf", :type => 'application/pdf', :disposition => 'inline')
-    #send_file("#{RAILS_ROOT}/public/acuteCareLeadershipSummit.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
 end
 
