@@ -1,6 +1,5 @@
 <div class="announcement">
   <h3 style="display:inline"><%= ann.title %></h3>
-  <div class='time_ago_announcement'>posted <%= time_ago_in_words(ann.updated_at) %> ago</div>
   <% if !session[:user].nil? && session[:user].role == "admin" %>
     <%= link_to "Edit", edit_announcement_path(ann.id) %>
     <%= link_to "Delete", :controller => 'announcements', :action => 'destroy', :id => ann.id, :confirm => 'Are you sure?', :method => 'delete' %>
