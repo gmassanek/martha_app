@@ -355,6 +355,11 @@ overflow: hidden;
 #footer-area li {
 display: inline;
 font-size: 15px;
+font-weight: bold;
+}
+
+#footer-area li a {
+color: rgb(140, 55, 40)
 }
 
 hr {
