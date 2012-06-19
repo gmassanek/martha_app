@@ -10,7 +10,7 @@ class PagesController < ApplicationController
 
   def program
     @title = "Program Information"
-    send_file("#{RAILS_ROOT}/public/2012_brochure.pdf", :type => 'application/pdf', :disposition => 'inline')
+    send_file("#{RAILS_ROOT}/public/2012_brochure_5-30.pdf", :type => 'application/pdf', :disposition => 'inline')
   end
 
   def hotel
