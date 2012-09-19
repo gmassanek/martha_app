@@ -27,6 +27,14 @@ module ApplicationHelper
       javascript_include_tag "ganalytics.js"
     end
   end
+
+  def dl_material_path(filename)
+    "/lecture_materials/2012/#{filename}"
+  end
+
+  def dl_link(test, filename, &options)
+    link_to test, dl_material_path(filename), options
+  end
 end
 
 

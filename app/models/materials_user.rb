@@ -1,6 +1,6 @@
 class MaterialsUser
   def self.authenticate(pass)
-    if pass=="summit2011"
+    if pass=="test"
       true
     else
       puts "returning false"

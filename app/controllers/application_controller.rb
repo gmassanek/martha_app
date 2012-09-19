@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
     end
     flash[:warning]='Please login to continue'
     session[:return_to]=request.request_uri
-    redirect_to :controller => "users", :action => "materials_login"
+    redirect_to materials_login_path
     return false
   end
 

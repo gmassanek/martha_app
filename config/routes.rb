@@ -5,28 +5,9 @@ MarthaApp::Application.routes.draw do
   get "admin/confirm_payment"
   get "registrations/confirm_payment"
 
-  get "materials/index"
-  get "materials/session1"
-  get "materials/session2a"
-  get "materials/session2b"
-  get "materials/session3"
-  get "materials/session3b"
-  get "materials/session3c"
-  get "materials/session3d"
-  get "materials/session3e"
-  get "materials/session3f"
-  get "materials/session4"
-  get "materials/session4b"
-  get "materials/session4c"
-  get "materials/session5"
-  get "materials/session6a"
-  get "materials/session6b"
-  get "materials/session6c"
-  get "materials/session6d"
-  get "materials/session7"
+  resources "materials", :only => [:index]
 
-  match '/materials', :to => 'materials#index'
-  match '/materials_login', :to => 'users#materials_login'
+  match '/materials/login', :to => 'users#materials_login', :as => 'materials_login'
   match '/materials_logout', :to => 'users#materials_logout'
 
   match '/register', :to => 'registrations#new'
